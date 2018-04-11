@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/aleppi/QuickMath/main.cpp
+iostream
+-
+
+/home/aleppi/QuickMath/pascal.cpp
+iostream
+-
+vector
+-
+pascal.h
+/home/aleppi/QuickMath/pascal.h
+
+/home/aleppi/QuickMath/pascal.h
+vector
+-
+

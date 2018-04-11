@@ -1,16 +1,8 @@
-//
-// Created by aleppi on 4/4/18.
-//
-
 #include <iostream>
 #include <vector>
+#include "pascal.h"
 
-typedef std::vector<std::vector<int>> vector2d;
-
-vector2d calculateTriangle(int num);
-void printTriangle(vector2d triangle);
-
-vector2d calculateTriangle(int rows)
+Pascal::vector2d Pascal::calculateTriangle(int rows)
 {
     vector2d vec;
     for (int i = 0; i < rows; ++i) {
@@ -28,7 +20,7 @@ vector2d calculateTriangle(int rows)
     return vec;
 }
 
-void printTriangle(vector2d triangle)
+void Pascal::printTriangle(Pascal::vector2d triangle)
 {
     for (int i = 0; i < triangle.size(); ++i) {
         for (int j = 0; j < triangle[i].size(); ++j) {

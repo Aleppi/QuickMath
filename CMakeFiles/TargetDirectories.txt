@@ -1,0 +1,3 @@
+/home/aleppi/QuickMath/CMakeFiles/rebuild_cache.dir
+/home/aleppi/QuickMath/CMakeFiles/edit_cache.dir
+/home/aleppi/QuickMath/CMakeFiles/QuickMath.dir
