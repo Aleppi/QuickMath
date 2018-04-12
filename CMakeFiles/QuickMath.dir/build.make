@@ -81,69 +81,95 @@ CMakeFiles/QuickMath.dir/main.cpp.o.provides: CMakeFiles/QuickMath.dir/main.cpp.
 CMakeFiles/QuickMath.dir/main.cpp.o.provides.build: CMakeFiles/QuickMath.dir/main.cpp.o
 
 
-CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o: CMakeFiles/QuickMath.dir/flags.make
-CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o: pascal/pascal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aleppi/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o -c /home/aleppi/QuickMath/pascal/pascal.cpp
+CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o: CMakeFiles/QuickMath.dir/flags.make
+CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o: Pascal/pascal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aleppi/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o -c /home/aleppi/QuickMath/Pascal/pascal.cpp
 
-CMakeFiles/QuickMath.dir/pascal/pascal.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QuickMath.dir/pascal/pascal.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aleppi/QuickMath/pascal/pascal.cpp > CMakeFiles/QuickMath.dir/pascal/pascal.cpp.i
+CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aleppi/QuickMath/Pascal/pascal.cpp > CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.i
 
-CMakeFiles/QuickMath.dir/pascal/pascal.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QuickMath.dir/pascal/pascal.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aleppi/QuickMath/pascal/pascal.cpp -o CMakeFiles/QuickMath.dir/pascal/pascal.cpp.s
+CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aleppi/QuickMath/Pascal/pascal.cpp -o CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.s
 
-CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o.requires:
+CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o.requires:
 
-.PHONY : CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o.requires
+.PHONY : CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o.requires
 
-CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o.provides: CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o.requires
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o.provides.build
-.PHONY : CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o.provides
+CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o.provides: CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o.requires
+	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o.provides.build
+.PHONY : CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o.provides
 
-CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o.provides.build: CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o
+CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o.provides.build: CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o
 
 
-CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o: CMakeFiles/QuickMath.dir/flags.make
-CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o: factorial/factorial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aleppi/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o -c /home/aleppi/QuickMath/factorial/factorial.cpp
+CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o: CMakeFiles/QuickMath.dir/flags.make
+CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o: Factorial/factorial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aleppi/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o -c /home/aleppi/QuickMath/Factorial/factorial.cpp
 
-CMakeFiles/QuickMath.dir/factorial/factorial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QuickMath.dir/factorial/factorial.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aleppi/QuickMath/factorial/factorial.cpp > CMakeFiles/QuickMath.dir/factorial/factorial.cpp.i
+CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aleppi/QuickMath/Factorial/factorial.cpp > CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.i
 
-CMakeFiles/QuickMath.dir/factorial/factorial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QuickMath.dir/factorial/factorial.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aleppi/QuickMath/factorial/factorial.cpp -o CMakeFiles/QuickMath.dir/factorial/factorial.cpp.s
+CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aleppi/QuickMath/Factorial/factorial.cpp -o CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.s
 
-CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o.requires:
+CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o.requires:
 
-.PHONY : CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o.requires
+.PHONY : CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o.requires
 
-CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o.provides: CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o.requires
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o.provides.build
-.PHONY : CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o.provides
+CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o.provides: CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o.requires
+	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o.provides.build
+.PHONY : CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o.provides
 
-CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o.provides.build: CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o
+CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o.provides.build: CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o
+
+
+CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o: CMakeFiles/QuickMath.dir/flags.make
+CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o: LinAlg/vector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aleppi/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o -c /home/aleppi/QuickMath/LinAlg/vector.cpp
+
+CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aleppi/QuickMath/LinAlg/vector.cpp > CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.i
+
+CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aleppi/QuickMath/LinAlg/vector.cpp -o CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.s
+
+CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o.requires:
+
+.PHONY : CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o.requires
+
+CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o.provides: CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o.requires
+	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o.provides.build
+.PHONY : CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o.provides
+
+CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o.provides.build: CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o
 
 
 # Object files for target QuickMath
 QuickMath_OBJECTS = \
 "CMakeFiles/QuickMath.dir/main.cpp.o" \
-"CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o" \
-"CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o"
+"CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o" \
+"CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o" \
+"CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o"
 
 # External object files for target QuickMath
 QuickMath_EXTERNAL_OBJECTS =
 
 QuickMath: CMakeFiles/QuickMath.dir/main.cpp.o
-QuickMath: CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o
-QuickMath: CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o
+QuickMath: CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o
+QuickMath: CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o
+QuickMath: CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o
 QuickMath: CMakeFiles/QuickMath.dir/build.make
 QuickMath: CMakeFiles/QuickMath.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aleppi/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable QuickMath"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aleppi/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable QuickMath"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/QuickMath.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -152,8 +178,9 @@ CMakeFiles/QuickMath.dir/build: QuickMath
 .PHONY : CMakeFiles/QuickMath.dir/build
 
 CMakeFiles/QuickMath.dir/requires: CMakeFiles/QuickMath.dir/main.cpp.o.requires
-CMakeFiles/QuickMath.dir/requires: CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o.requires
-CMakeFiles/QuickMath.dir/requires: CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o.requires
+CMakeFiles/QuickMath.dir/requires: CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o.requires
+CMakeFiles/QuickMath.dir/requires: CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o.requires
+CMakeFiles/QuickMath.dir/requires: CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o.requires
 
 .PHONY : CMakeFiles/QuickMath.dir/requires
 

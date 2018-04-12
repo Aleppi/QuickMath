@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/QuickMath.dir/main.cpp.o"
-  "CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o"
-  "CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o"
+  "CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o"
+  "CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o"
+  "CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o"
   "QuickMath.pdb"
   "QuickMath"
 )

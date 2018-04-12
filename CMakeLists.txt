@@ -5,8 +5,10 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(QuickMath
         main.cpp
-        pascal/pascal.cpp
-        pascal/pascal.h
-        factorial/factorial.cpp
-        factorial/factorial.h
+        Pascal/pascal.cpp
+        Pascal/pascal.h
+        Factorial/factorial.cpp
+        Factorial/factorial.h
+        LinAlg/vector.cpp
+        LinAlg/vector.h
         userInput.h)

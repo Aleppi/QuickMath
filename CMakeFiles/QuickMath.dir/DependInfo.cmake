@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/aleppi/QuickMath/factorial/factorial.cpp" "/home/aleppi/QuickMath/CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o"
+  "/home/aleppi/QuickMath/Factorial/factorial.cpp" "/home/aleppi/QuickMath/CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o"
+  "/home/aleppi/QuickMath/LinAlg/vector.cpp" "/home/aleppi/QuickMath/CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o"
+  "/home/aleppi/QuickMath/Pascal/pascal.cpp" "/home/aleppi/QuickMath/CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o"
   "/home/aleppi/QuickMath/main.cpp" "/home/aleppi/QuickMath/CMakeFiles/QuickMath.dir/main.cpp.o"
-  "/home/aleppi/QuickMath/pascal/pascal.cpp" "/home/aleppi/QuickMath/CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
