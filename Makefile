@@ -123,32 +123,32 @@ QuickMath/fast:
 	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/build
 .PHONY : QuickMath/fast
 
-factorial.o: factorial.c.o
+factorial/factorial.o: factorial/factorial.cpp.o
 
-.PHONY : factorial.o
+.PHONY : factorial/factorial.o
 
 # target to build an object file
-factorial.c.o:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/factorial.c.o
-.PHONY : factorial.c.o
+factorial/factorial.cpp.o:
+	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/factorial/factorial.cpp.o
+.PHONY : factorial/factorial.cpp.o
 
-factorial.i: factorial.c.i
+factorial/factorial.i: factorial/factorial.cpp.i
 
-.PHONY : factorial.i
+.PHONY : factorial/factorial.i
 
 # target to preprocess a source file
-factorial.c.i:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/factorial.c.i
-.PHONY : factorial.c.i
+factorial/factorial.cpp.i:
+	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/factorial/factorial.cpp.i
+.PHONY : factorial/factorial.cpp.i
 
-factorial.s: factorial.c.s
+factorial/factorial.s: factorial/factorial.cpp.s
 
-.PHONY : factorial.s
+.PHONY : factorial/factorial.s
 
 # target to generate assembly for a file
-factorial.c.s:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/factorial.c.s
-.PHONY : factorial.c.s
+factorial/factorial.cpp.s:
+	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/factorial/factorial.cpp.s
+.PHONY : factorial/factorial.cpp.s
 
 main.o: main.cpp.o
 
@@ -177,32 +177,32 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-pascal.o: pascal.cpp.o
+pascal/pascal.o: pascal/pascal.cpp.o
 
-.PHONY : pascal.o
+.PHONY : pascal/pascal.o
 
 # target to build an object file
-pascal.cpp.o:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/pascal.cpp.o
-.PHONY : pascal.cpp.o
+pascal/pascal.cpp.o:
+	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/pascal/pascal.cpp.o
+.PHONY : pascal/pascal.cpp.o
 
-pascal.i: pascal.cpp.i
+pascal/pascal.i: pascal/pascal.cpp.i
 
-.PHONY : pascal.i
+.PHONY : pascal/pascal.i
 
 # target to preprocess a source file
-pascal.cpp.i:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/pascal.cpp.i
-.PHONY : pascal.cpp.i
+pascal/pascal.cpp.i:
+	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/pascal/pascal.cpp.i
+.PHONY : pascal/pascal.cpp.i
 
-pascal.s: pascal.cpp.s
+pascal/pascal.s: pascal/pascal.cpp.s
 
-.PHONY : pascal.s
+.PHONY : pascal/pascal.s
 
 # target to generate assembly for a file
-pascal.cpp.s:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/pascal.cpp.s
-.PHONY : pascal.cpp.s
+pascal/pascal.cpp.s:
+	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/pascal/pascal.cpp.s
+.PHONY : pascal/pascal.cpp.s
 
 # Help Target
 help:
@@ -213,15 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... QuickMath"
-	@echo "... factorial.o"
-	@echo "... factorial.i"
-	@echo "... factorial.s"
+	@echo "... factorial/factorial.o"
+	@echo "... factorial/factorial.i"
+	@echo "... factorial/factorial.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... pascal.o"
-	@echo "... pascal.i"
-	@echo "... pascal.s"
+	@echo "... pascal/pascal.o"
+	@echo "... pascal/pascal.i"
+	@echo "... pascal/pascal.s"
 .PHONY : help
 
 
