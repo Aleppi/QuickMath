@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named QuickMath
+# Target rules for targets named QuickMath.out
 
 # Build rule for target.
-QuickMath: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 QuickMath
-.PHONY : QuickMath
+QuickMath.out: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 QuickMath.out
+.PHONY : QuickMath.out
 
 # fast build rule for target.
-QuickMath/fast:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/build
-.PHONY : QuickMath/fast
+QuickMath.out/fast:
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/build
+.PHONY : QuickMath.out/fast
 
 Factorial/factorial.o: Factorial/factorial.cpp.o
 
@@ -129,7 +129,7 @@ Factorial/factorial.o: Factorial/factorial.cpp.o
 
 # target to build an object file
 Factorial/factorial.cpp.o:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Factorial/factorial.cpp.o
 .PHONY : Factorial/factorial.cpp.o
 
 Factorial/factorial.i: Factorial/factorial.cpp.i
@@ -138,7 +138,7 @@ Factorial/factorial.i: Factorial/factorial.cpp.i
 
 # target to preprocess a source file
 Factorial/factorial.cpp.i:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.i
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Factorial/factorial.cpp.i
 .PHONY : Factorial/factorial.cpp.i
 
 Factorial/factorial.s: Factorial/factorial.cpp.s
@@ -147,7 +147,7 @@ Factorial/factorial.s: Factorial/factorial.cpp.s
 
 # target to generate assembly for a file
 Factorial/factorial.cpp.s:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.s
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Factorial/factorial.cpp.s
 .PHONY : Factorial/factorial.cpp.s
 
 LinAlg/vector.o: LinAlg/vector.cpp.o
@@ -156,7 +156,7 @@ LinAlg/vector.o: LinAlg/vector.cpp.o
 
 # target to build an object file
 LinAlg/vector.cpp.o:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.o
 .PHONY : LinAlg/vector.cpp.o
 
 LinAlg/vector.i: LinAlg/vector.cpp.i
@@ -165,7 +165,7 @@ LinAlg/vector.i: LinAlg/vector.cpp.i
 
 # target to preprocess a source file
 LinAlg/vector.cpp.i:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.i
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.i
 .PHONY : LinAlg/vector.cpp.i
 
 LinAlg/vector.s: LinAlg/vector.cpp.s
@@ -174,7 +174,7 @@ LinAlg/vector.s: LinAlg/vector.cpp.s
 
 # target to generate assembly for a file
 LinAlg/vector.cpp.s:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.s
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.s
 .PHONY : LinAlg/vector.cpp.s
 
 Pascal/pascal.o: Pascal/pascal.cpp.o
@@ -183,7 +183,7 @@ Pascal/pascal.o: Pascal/pascal.cpp.o
 
 # target to build an object file
 Pascal/pascal.cpp.o:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Pascal/pascal.cpp.o
 .PHONY : Pascal/pascal.cpp.o
 
 Pascal/pascal.i: Pascal/pascal.cpp.i
@@ -192,7 +192,7 @@ Pascal/pascal.i: Pascal/pascal.cpp.i
 
 # target to preprocess a source file
 Pascal/pascal.cpp.i:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.i
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Pascal/pascal.cpp.i
 .PHONY : Pascal/pascal.cpp.i
 
 Pascal/pascal.s: Pascal/pascal.cpp.s
@@ -201,7 +201,7 @@ Pascal/pascal.s: Pascal/pascal.cpp.s
 
 # target to generate assembly for a file
 Pascal/pascal.cpp.s:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.s
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Pascal/pascal.cpp.s
 .PHONY : Pascal/pascal.cpp.s
 
 main.o: main.cpp.o
@@ -210,7 +210,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -219,7 +219,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -228,7 +228,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/QuickMath.dir/build.make CMakeFiles/QuickMath.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -239,7 +239,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... QuickMath"
+	@echo "... QuickMath.out"
 	@echo "... Factorial/factorial.o"
 	@echo "... Factorial/factorial.i"
 	@echo "... Factorial/factorial.s"

@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/aleppi/QuickMath/Factorial/factorial.cpp
+factorial.h
+/home/aleppi/QuickMath/Factorial/factorial.h
+
+/home/aleppi/QuickMath/Factorial/factorial.h
+
+/home/aleppi/QuickMath/LinAlg/vector.cpp
+array
+-
+vector.h
+/home/aleppi/QuickMath/LinAlg/vector.h
+
+/home/aleppi/QuickMath/LinAlg/vector.h
+array
+-
+
+/home/aleppi/QuickMath/Pascal/pascal.cpp
+iostream
+-
+vector
+-
+pascal.h
+/home/aleppi/QuickMath/Pascal/pascal.h
+
+/home/aleppi/QuickMath/Pascal/pascal.h
+vector
+-
+
+/home/aleppi/QuickMath/main.cpp
+iostream
+-
+

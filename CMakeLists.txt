@@ -3,7 +3,7 @@ project(QuickMath)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(QuickMath
+add_executable(QuickMath.out
         main.cpp
         Pascal/pascal.cpp
         Pascal/pascal.h
