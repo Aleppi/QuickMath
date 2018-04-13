@@ -10,5 +10,4 @@ add_executable(QuickMath
         Factorial/factorial.cpp
         Factorial/factorial.h
         LinAlg/vector.cpp
-        LinAlg/vector.h
-        userInput.h)
+        LinAlg/vector.h)
