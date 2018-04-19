@@ -12,6 +12,7 @@ class Vector {
         Vector& scalarMultiply(int scalar);
         int dotProduct(std::array<int, 3> vector);
         Vector crossProduct(std::array<int, 3> vector);
+        double calculateAngle(std::array<int, 3> vector);
     private:
         int m_x = 0;
         int m_y = 0;

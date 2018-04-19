@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,35 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/home/aleppi/QuickMath/Factorial/factorial.cpp
+/home/aleppi/Projects/Programming/QuickMath/Factorial/factorial.cpp
 factorial.h
-/home/aleppi/QuickMath/Factorial/factorial.h
+/home/aleppi/Projects/Programming/QuickMath/Factorial/factorial.h
 
-/home/aleppi/QuickMath/Factorial/factorial.h
+/home/aleppi/Projects/Programming/QuickMath/Factorial/factorial.h
 
-/home/aleppi/QuickMath/LinAlg/vector.cpp
+/home/aleppi/Projects/Programming/QuickMath/LinAlg/vector.cpp
 array
 -
 vector.h
-/home/aleppi/QuickMath/LinAlg/vector.h
+/home/aleppi/Projects/Programming/QuickMath/LinAlg/vector.h
 
-/home/aleppi/QuickMath/LinAlg/vector.h
+/home/aleppi/Projects/Programming/QuickMath/LinAlg/vector.h
 array
 -
 
-/home/aleppi/QuickMath/Pascal/pascal.cpp
+/home/aleppi/Projects/Programming/QuickMath/Pascal/pascal.cpp
 iostream
 -
 vector
 -
 pascal.h
-/home/aleppi/QuickMath/Pascal/pascal.h
+/home/aleppi/Projects/Programming/QuickMath/Pascal/pascal.h
 
-/home/aleppi/QuickMath/Pascal/pascal.h
+/home/aleppi/Projects/Programming/QuickMath/Pascal/pascal.h
 vector
 -
 
-/home/aleppi/QuickMath/main.cpp
+/home/aleppi/Projects/Programming/QuickMath/main.cpp
 iostream
 -
 
