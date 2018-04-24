@@ -6,35 +6,55 @@
 
 #IncludeRegexTransform: 
 
-/home/aleppi/Projects/Programming/QuickMath/Factorial/factorial.cpp
+/home/aleppi/Projects/QuickMath/Factorial/factorial.cpp
 factorial.h
-/home/aleppi/Projects/Programming/QuickMath/Factorial/factorial.h
+/home/aleppi/Projects/QuickMath/Factorial/factorial.h
 
-/home/aleppi/Projects/Programming/QuickMath/Factorial/factorial.h
+/home/aleppi/Projects/QuickMath/Factorial/factorial.h
 
-/home/aleppi/Projects/Programming/QuickMath/LinAlg/vector.cpp
+/home/aleppi/Projects/QuickMath/LinAlg/vector.cpp
 array
 -
 vector.h
-/home/aleppi/Projects/Programming/QuickMath/LinAlg/vector.h
+/home/aleppi/Projects/QuickMath/LinAlg/vector.h
 
-/home/aleppi/Projects/Programming/QuickMath/LinAlg/vector.h
+/home/aleppi/Projects/QuickMath/LinAlg/vector.h
 array
 -
 
-/home/aleppi/Projects/Programming/QuickMath/Pascal/pascal.cpp
+/home/aleppi/Projects/QuickMath/Math/exponent.cpp
+exponent.h
+/home/aleppi/Projects/QuickMath/Math/exponent.h
+
+/home/aleppi/Projects/QuickMath/Math/exponent.h
+
+/home/aleppi/Projects/QuickMath/Pascal/pascal.cpp
 iostream
 -
 vector
 -
 pascal.h
-/home/aleppi/Projects/Programming/QuickMath/Pascal/pascal.h
+/home/aleppi/Projects/QuickMath/Pascal/pascal.h
 
-/home/aleppi/Projects/Programming/QuickMath/Pascal/pascal.h
+/home/aleppi/Projects/QuickMath/Pascal/pascal.h
 vector
 -
 
-/home/aleppi/Projects/Programming/QuickMath/main.cpp
+/home/aleppi/Projects/QuickMath/Trig/trigFunctions.cpp
+../config.h
+/home/aleppi/Projects/QuickMath/config.h
+trigFunctions.h
+/home/aleppi/Projects/QuickMath/Trig/trigFunctions.h
+../Math/exponent.h
+/home/aleppi/Projects/QuickMath/Math/exponent.h
+../Factorial/factorial.h
+/home/aleppi/Projects/QuickMath/Factorial/factorial.h
+
+/home/aleppi/Projects/QuickMath/Trig/trigFunctions.h
+
+/home/aleppi/Projects/QuickMath/config.h
+
+/home/aleppi/Projects/QuickMath/main.cpp
 iostream
 -
 

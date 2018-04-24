@@ -46,7 +46,7 @@ Vector Vector::crossProduct(std::array<int, 3> vector)
     return result;
 }
 
-doulbe Vector::calculateAngle(std::array<int, 3> vector)
+double Vector::calculateAngle(std::array<int, 3> vector)
 {
     double angle;
     return angle;

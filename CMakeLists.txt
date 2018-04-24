@@ -5,9 +5,14 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(QuickMath.out
         main.cpp
+        config.h
+        Math/exponent.cpp
+        Math/exponent.h
         Pascal/pascal.cpp
         Pascal/pascal.h
         Factorial/factorial.cpp
         Factorial/factorial.h
         LinAlg/vector.cpp
-        LinAlg/vector.h)
+        LinAlg/vector.h
+        Trig/trigFunctions.cpp
+        Trig/trigFunctions.h)

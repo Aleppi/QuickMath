@@ -4,8 +4,8 @@
 
 class Vector {
     public:
-        Vector() {}
-        Vector(int x, int y, int z) : m_x(x), m_y(y), m_z(z) {}
+        Vector() {};
+        Vector(int x, int y, int z) : m_x(x), m_y(y), m_z(z) {};
         std::array<int, 3> getVector();
         Vector& addVector(std::array<int, 3> vector);
         Vector& subtractVector(std::array<int, 3> vector);

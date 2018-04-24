@@ -1,9 +1,9 @@
 #ifndef TRIGFUNCTIONS_H
 #define TRIGFUNCTIONS_H
-class trigFunctions {
+class TrigFunctions {
     public:
-        trigFunctions() {};
-        trigFunctions(double x) {} : m_x(x);
+        TrigFunctions() {};
+        TrigFunctions(double x) : m_x(x) {};
         double sin(double x);
         double cos(double x);
         double tan(double x);
@@ -12,4 +12,5 @@ class trigFunctions {
         double arctan(double x);
     private:
         double m_x;
-}
+};
+#endif
