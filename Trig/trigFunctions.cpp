@@ -5,7 +5,7 @@
 
 double TrigFunctions::sin(double x)
 {
-   double result = 0;
+   double result(0);
    for (int n = 0; n <= config::trigPrecision; ++n) {
        result += (((Exponent::power(-1, n)) / (Factorial::calculateFactorial(2 * n + 1))) * Exponent::power(x, 2 * n + 1));
    }
@@ -14,7 +14,7 @@ double TrigFunctions::sin(double x)
 
 double TrigFunctions::cos(double x)
 {
-    double result = 0;
+    double result(0);
     for (int n = 0; n <= config::trigPrecision; ++n) {
         result += (((Exponent::power(-1, n)) / (Factorial::calculateFactorial(2 * n))) * Exponent::power(x, 2*n));
     }
@@ -23,7 +23,7 @@ double TrigFunctions::cos(double x)
 
 double TrigFunctions::tan(double x)
 {
-    double result = 0;
+    double result(0);
     for (int n = 1; n <= config::trigPrecision; ++n) {
         result += (((config::bernoulli[2 * n] * Exponent::power(-4, n) * (1 - Exponent::power(4, n))) / (Factorial::calculateFactorial(2 * n))) * Exponent::power(x, 2 * n - 1));
     }
@@ -32,15 +32,27 @@ double TrigFunctions::tan(double x)
 
 double TrigFunctions::arcsin(double x)
 {
-
+    double result(0);
+    for (int n = 0; n <= config::trigPrecision; ++n) {
+        result += (((Factorial::calculateFactorial(2 * n)) / (Exponent::power(4, n) * Exponent::power(Factorial::calculateFactorial(n), 2) * (2 * n + 1))) * Exponent::power(x, 2 * n + 1));
+    }
+    return result;
 }
 
 double TrigFunctions::arccos(double x)
 {
-
+    double result(0);
+    for (int n = 0; n <= config::trigPrecision; ++n) {
+        result += (((Factorial::calculateFactorial(2 * n)) / (Exponent::power(4, n) * Exponent::power(Factorial::calculateFactorial(n), 2) * (2 * n + 1))) * Exponent::power(x, 2 * n + 1));
+    }
+    return (config::pi/2) - result;
 }
 
 double TrigFunctions::arctan(double x)
 {
-
+    double result(0);
+    for (int n = 0; n <= config::trigPrecision; ++n) {
+        result += (((Exponent::power(-1, n)) / (2 * n + 1)) * Exponent::power(x, 2 * n + 1));
+    }
+    return result;
 }
