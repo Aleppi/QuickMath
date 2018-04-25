@@ -4,12 +4,12 @@ class TrigFunctions {
     public:
         TrigFunctions() {};
         TrigFunctions(double x) : m_x(x) {};
-        double sin(double x);
-        double cos(double x);
-        double tan(double x);
-        double arcsin(double x);
-        double arccos(double x);
-        double arctan(double x);
+        static double sin(double x);
+        static double cos(double x);
+        static double tan(double x);
+        static double arcsin(double x);
+        static double arccos(double x);
+        static double arctan(double x);
     private:
         double m_x;
 };

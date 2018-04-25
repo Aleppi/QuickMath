@@ -3,9 +3,9 @@
 class Exponent {
     public:
         Exponent() {};
-        Exponent(int x) : m_x(x) {};
-        static int power(int base, int exp);
+        Exponent(double x) : m_x(x) {};
+        static long double power(double base, int exp);
     private:
-        int m_x;
+        double m_x;
 };
 #endif

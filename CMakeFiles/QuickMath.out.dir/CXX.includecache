@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -41,10 +41,10 @@ vector
 -
 
 /home/aleppi/Projects/QuickMath/Trig/trigFunctions.cpp
-../config.h
-/home/aleppi/Projects/QuickMath/config.h
 trigFunctions.h
 /home/aleppi/Projects/QuickMath/Trig/trigFunctions.h
+../config.h
+/home/aleppi/Projects/QuickMath/config.h
 ../Math/exponent.h
 /home/aleppi/Projects/QuickMath/Math/exponent.h
 ../Factorial/factorial.h
