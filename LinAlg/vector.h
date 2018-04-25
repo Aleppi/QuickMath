@@ -10,6 +10,9 @@ class Vector {
         Vector& addVector(std::array<int, 3> vector);
         Vector& subtractVector(std::array<int, 3> vector);
         Vector& scalarMultiply(int scalar);
+        Vector vectorSum(std::array<int, 3> vector1, std::array<int, 3> vector2);
+        Vector vectorDifference(std::array<int, 3> vector1, std::array<int, 3> vector2);
+        Vector scalarProduct(std::array<int, 3> vector, int scalar);
         int dotProduct(std::array<int, 3> vector);
         Vector crossProduct(std::array<int, 3> vector);
         double calculateAngle(std::array<int, 3> vector);
