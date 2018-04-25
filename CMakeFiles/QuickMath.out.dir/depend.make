@@ -9,6 +9,7 @@ CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.o: LinAlg/vector.h
 
 CMakeFiles/QuickMath.out.dir/Math/exponent.cpp.o: Math/exponent.cpp
 CMakeFiles/QuickMath.out.dir/Math/exponent.cpp.o: Math/exponent.h
+CMakeFiles/QuickMath.out.dir/Math/exponent.cpp.o: config.h
 
 CMakeFiles/QuickMath.out.dir/Pascal/pascal.cpp.o: Pascal/pascal.cpp
 CMakeFiles/QuickMath.out.dir/Pascal/pascal.cpp.o: Pascal/pascal.h
@@ -19,5 +20,6 @@ CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.o: Trig/trigFunctions.cpp
 CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.o: Trig/trigFunctions.h
 CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.o: config.h
 
+CMakeFiles/QuickMath.out.dir/main.cpp.o: Math/exponent.h
 CMakeFiles/QuickMath.out.dir/main.cpp.o: main.cpp
 

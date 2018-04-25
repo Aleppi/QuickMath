@@ -1,8 +1,9 @@
 #include "exponent.h"
+#include "../config.h"
 
 long double Exponent::power(double base, int exp)
 {
-    long double result = 1;
+    long double result(1);
     if (!exp)
         return result;
     else if (exp < 0)
@@ -13,3 +14,13 @@ long double Exponent::power(double base, int exp)
     }
     return result;
 }
+
+long double Exponent::sqRoot(double radicand)
+{
+    long double approxRoot(radicand / 2);
+    for (int i = 0; i <= config::sqRootPrecision; ++i) {
+        approxRoot = ((approxRoot + (radicand / approxRoot)) / 2);
+    }
+    return approxRoot;
+}
+

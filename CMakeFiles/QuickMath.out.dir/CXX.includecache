@@ -25,6 +25,8 @@ array
 /home/aleppi/Projects/QuickMath/Math/exponent.cpp
 exponent.h
 /home/aleppi/Projects/QuickMath/Math/exponent.h
+../config.h
+/home/aleppi/Projects/QuickMath/config.h
 
 /home/aleppi/Projects/QuickMath/Math/exponent.h
 
@@ -57,4 +59,6 @@ trigFunctions.h
 /home/aleppi/Projects/QuickMath/main.cpp
 iostream
 -
+Math/exponent.h
+/home/aleppi/Projects/QuickMath/Math/exponent.h
 
