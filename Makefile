@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aleppi/QuickMath
+CMAKE_SOURCE_DIR = /home/aleppi/Projects/QuickMath
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aleppi/QuickMath
+CMAKE_BINARY_DIR = /home/aleppi/Projects/QuickMath
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aleppi/QuickMath/CMakeFiles /home/aleppi/QuickMath/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aleppi/Projects/QuickMath/CMakeFiles /home/aleppi/Projects/QuickMath/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aleppi/QuickMath/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aleppi/Projects/QuickMath/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,33 @@ LinAlg/vector.cpp.s:
 	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.s
 .PHONY : LinAlg/vector.cpp.s
 
+Math/exponent.o: Math/exponent.cpp.o
+
+.PHONY : Math/exponent.o
+
+# target to build an object file
+Math/exponent.cpp.o:
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Math/exponent.cpp.o
+.PHONY : Math/exponent.cpp.o
+
+Math/exponent.i: Math/exponent.cpp.i
+
+.PHONY : Math/exponent.i
+
+# target to preprocess a source file
+Math/exponent.cpp.i:
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Math/exponent.cpp.i
+.PHONY : Math/exponent.cpp.i
+
+Math/exponent.s: Math/exponent.cpp.s
+
+.PHONY : Math/exponent.s
+
+# target to generate assembly for a file
+Math/exponent.cpp.s:
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Math/exponent.cpp.s
+.PHONY : Math/exponent.cpp.s
+
 Pascal/pascal.o: Pascal/pascal.cpp.o
 
 .PHONY : Pascal/pascal.o
@@ -203,6 +230,33 @@ Pascal/pascal.s: Pascal/pascal.cpp.s
 Pascal/pascal.cpp.s:
 	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Pascal/pascal.cpp.s
 .PHONY : Pascal/pascal.cpp.s
+
+Trig/trigFunctions.o: Trig/trigFunctions.cpp.o
+
+.PHONY : Trig/trigFunctions.o
+
+# target to build an object file
+Trig/trigFunctions.cpp.o:
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.o
+.PHONY : Trig/trigFunctions.cpp.o
+
+Trig/trigFunctions.i: Trig/trigFunctions.cpp.i
+
+.PHONY : Trig/trigFunctions.i
+
+# target to preprocess a source file
+Trig/trigFunctions.cpp.i:
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.i
+.PHONY : Trig/trigFunctions.cpp.i
+
+Trig/trigFunctions.s: Trig/trigFunctions.cpp.s
+
+.PHONY : Trig/trigFunctions.s
+
+# target to generate assembly for a file
+Trig/trigFunctions.cpp.s:
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.s
+.PHONY : Trig/trigFunctions.cpp.s
 
 main.o: main.cpp.o
 
@@ -246,9 +300,15 @@ help:
 	@echo "... LinAlg/vector.o"
 	@echo "... LinAlg/vector.i"
 	@echo "... LinAlg/vector.s"
+	@echo "... Math/exponent.o"
+	@echo "... Math/exponent.i"
+	@echo "... Math/exponent.s"
 	@echo "... Pascal/pascal.o"
 	@echo "... Pascal/pascal.i"
 	@echo "... Pascal/pascal.s"
+	@echo "... Trig/trigFunctions.o"
+	@echo "... Trig/trigFunctions.i"
+	@echo "... Trig/trigFunctions.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
