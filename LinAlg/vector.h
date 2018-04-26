@@ -10,12 +10,14 @@ class Vector {
         Vector& addVector(std::array<int, 3> vector);
         Vector& subtractVector(std::array<int, 3> vector);
         Vector& scalarMultiply(int scalar);
-        Vector vectorSum(std::array<int, 3> vector1, std::array<int, 3> vector2);
-        Vector vectorDifference(std::array<int, 3> vector1, std::array<int, 3> vector2);
-        Vector scalarProduct(std::array<int, 3> vector, int scalar);
-        int dotProduct(std::array<int, 3> vector);
-        Vector crossProduct(std::array<int, 3> vector);
-        double calculateAngle(std::array<int, 3> vector);
+        static Vector vectorSum(std::array<int, 3> vector1, std::array<int, 3> vector2);
+        static Vector vectorDifference(std::array<int, 3> vector1, std::array<int, 3> vector2);
+        static Vector scalarProduct(std::array<int, 3> vector, int scalar);
+        static int dotProduct(std::array<int, 3> vector1, std::array<int, 3> vector2);
+        static Vector crossProduct(std::array<int, 3> vector1, std::array<int, 3> vector2);
+        double getLength();
+        static double calculateLength(std::array<int, 3> vector);
+        static double calculateAngle(std::array<int, 3> vector1, std::array<int, 3> vector2);
     private:
         int m_x = 0;
         int m_y = 0;

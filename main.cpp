@@ -1,11 +1,9 @@
 #include <iostream>
-#include "Math/exponent.h"
+#include "LinAlg/vector.h"
 
 int main()
 {
-    std::cout << "Enter a value: ";
-    double value;
-    std::cin >> value;
-    std::cout << Exponent::sqRoot(value) << '\n';
+    Vector v1(0, 4, 3);
+    std::cout << v1.getLength() << '\n';
     return 0;
 }

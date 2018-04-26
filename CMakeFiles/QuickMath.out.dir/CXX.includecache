@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -17,6 +17,8 @@ array
 -
 vector.h
 /home/aleppi/Projects/QuickMath/LinAlg/vector.h
+../Math/exponent.h
+/home/aleppi/Projects/QuickMath/Math/exponent.h
 
 /home/aleppi/Projects/QuickMath/LinAlg/vector.h
 array
@@ -59,6 +61,6 @@ trigFunctions.h
 /home/aleppi/Projects/QuickMath/main.cpp
 iostream
 -
-Math/exponent.h
-/home/aleppi/Projects/QuickMath/Math/exponent.h
+LinAlg/vector.h
+/home/aleppi/Projects/QuickMath/LinAlg/vector.h
 

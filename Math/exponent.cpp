@@ -17,10 +17,10 @@ long double Exponent::power(double base, int exp)
 
 long double Exponent::sqRoot(double radicand)
 {
-    long double approxRoot(radicand / 2);
+    long double root(radicand / 2);
     for (int i = 0; i <= config::sqRootPrecision; ++i) {
-        approxRoot = ((approxRoot + (radicand / approxRoot)) / 2);
+        root = ((root + (radicand / root)) / 2);
     }
-    return approxRoot;
+    return root;
 }
 

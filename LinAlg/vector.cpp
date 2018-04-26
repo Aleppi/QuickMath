@@ -1,5 +1,6 @@
 #include <array>
 #include "vector.h"
+#include "../Math/exponent.h"
 
 std::array<int, 3> Vector::getVector()
 {
@@ -39,32 +40,44 @@ Vector Vector::vectorSum(std::array<int, 3> vector1, std::array<int, 3> vector2)
 
 Vector Vector::vectorDifference(std::array<int, 3> vector1, std::array<int, 3> vector2)
 {
-    Vector sum(vector1[0] - vector2[0], vector1[1] - vector2[1], vector1[2] - vector2[2]);
-    return sum;
+    Vector difference(vector1[0] - vector2[0], vector1[1] - vector2[1], vector1[2] - vector2[2]);
+    return difference;
 }
 
 Vector Vector::scalarProduct(std::array<int, 3> vector, int scalar)
 {
-    Vector sum(vector[0] * scalar, vector[1] * scalar, vector[2] * scalar);
-    return sum;
-}
-
-int Vector::dotProduct(std::array<int, 3> vector)
-{
-    int product = m_x * vector[0] + m_y * vector[1] + m_z * vector[2];
+    Vector product(vector[0] * scalar, vector[1] * scalar, vector[2] * scalar);
     return product;
 }
 
-Vector Vector::crossProduct(std::array<int, 3> vector)
+int Vector::dotProduct(std::array<int, 3> vector1, std::array<int, 3> vector2)
 {
-    int x = m_y * vector[2] - m_z * vector[1];
-    int y = m_z * vector[0] - m_x * vector[2];
-    int z = m_x * vector[1] - m_y * vector[0];
+    int product(vector1[0] * vector2[0] + vector1[1] * vector2[1] + vector1[2] * vector2[2]);
+    return product;
+}
+
+Vector Vector::crossProduct(std::array<int, 3> vector1, std::array<int, 3> vector2)
+{
+    int x(vector1[1] * vector2[2] - vector1[2] * vector2[1]);
+    int y(vector1[2] * vector2[0] - vector1[0] * vector2[2]);
+    int z(vector1[0] * vector2[1] - vector1[1] * vector2[0]);
     Vector product(x, y, z);
     return product;
 }
 
-double Vector::calculateAngle(std::array<int, 3> vector)
+double Vector::getLength()
+{
+    double length(Exponent::sqRoot(Exponent::power(m_x, 2) + Exponent::power(m_y, 2) + Exponent::power(m_z, 2)));
+    return length;
+}
+
+double Vector::calculateLength(std::array<int, 3> vector)
+{
+    double length(Exponent::sqRoot(Exponent::power(vector[0], 2)  + Exponent::power(vector[1], 2) + Exponent::power(vector[2], 2)));
+    return length;
+}
+
+double Vector::calculateAngle(std::array<int, 3> vector1, std::array<int, 3> vector2)
 {
     double angle;
     return angle;
