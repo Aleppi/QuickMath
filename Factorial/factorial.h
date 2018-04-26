@@ -3,9 +3,8 @@
 class Factorial {
     public:
         Factorial() {}
-        Factorial(unsigned long factorial) 
-            : m_factorial(factorial) {}
-        unsigned long calculateFactorial(unsigned long x);
+        Factorial(unsigned long factorial) : m_factorial(factorial) {}
+        static unsigned long calculateFactorial(unsigned long x);
     private:
         unsigned long m_factorial = 0;
 };

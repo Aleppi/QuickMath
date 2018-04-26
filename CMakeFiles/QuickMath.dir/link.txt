@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/QuickMath.dir/main.cpp.o CMakeFiles/QuickMath.dir/Pascal/pascal.cpp.o CMakeFiles/QuickMath.dir/Factorial/factorial.cpp.o CMakeFiles/QuickMath.dir/LinAlg/vector.cpp.o  -o QuickMath 
