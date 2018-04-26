@@ -1,6 +1,7 @@
 #include <array>
 #include "vector.h"
 #include "../Math/exponent.h"
+#include "../Trig/trigFunctions.h"
 
 std::array<int, 3> Vector::getVector()
 {
@@ -79,6 +80,6 @@ double Vector::calculateLength(std::array<int, 3> vector)
 
 double Vector::calculateAngle(std::array<int, 3> vector1, std::array<int, 3> vector2)
 {
-    double angle;
+    double angle(TrigFunctions::arccos(Vector::dotProduct(vector1, vector2) / (Vector::calculateLength(vector1) * Vector::calculateLength(vector2))));
     return angle;
 }

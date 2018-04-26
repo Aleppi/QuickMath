@@ -7,6 +7,7 @@ CMakeFiles/QuickMath.out.dir/Factorial/factorial.cpp.o: Factorial/factorial.h
 CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.o: LinAlg/vector.cpp
 CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.o: LinAlg/vector.h
 CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.o: Math/exponent.h
+CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.o: Trig/trigFunctions.h
 
 CMakeFiles/QuickMath.out.dir/Math/exponent.cpp.o: Math/exponent.cpp
 CMakeFiles/QuickMath.out.dir/Math/exponent.cpp.o: Math/exponent.h
