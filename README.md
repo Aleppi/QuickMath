@@ -25,6 +25,19 @@ triangle.
 ### LinAlg
 A collection of functions to perform Linear Algebra calculations. Currently
 only supports calculations involving vectors.
+### Existing functions
+* getVector
+* addVector
+* subtractVector
+* scalarMultiply
+* vectorSum
+* vectorDifference
+* scalarProduct
+* dotProduct
+* crossProduct
+* getLength
+* calculateLength
+* calculateAngle
 
 ### Trig
 A collection of functions to perform trigonometric operations. Currently
