@@ -12,6 +12,14 @@ factorial.h
 
 /home/aleppi/Projects/QuickMath/Factorial/factorial.h
 
+/home/aleppi/Projects/QuickMath/LinAlg/matrix.cpp
+matrix.h
+/home/aleppi/Projects/QuickMath/LinAlg/matrix.h
+
+/home/aleppi/Projects/QuickMath/LinAlg/matrix.h
+vector.h
+/home/aleppi/Projects/QuickMath/LinAlg/vector.h
+
 /home/aleppi/Projects/QuickMath/LinAlg/vector.cpp
 array
 -
@@ -65,4 +73,6 @@ iostream
 -
 LinAlg/vector.h
 /home/aleppi/Projects/QuickMath/LinAlg/vector.h
+LinAlg/matrix.h
+/home/aleppi/Projects/QuickMath/LinAlg/matrix.h
 
