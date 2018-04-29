@@ -3,29 +3,36 @@
 #include "../Math/exponent.h"
 #include "../Trig/trigFunctions.h"
 
-std::array<int, 3> Vector::getVector()
+//Vector::Coordinates Vector::getVector()
+//{
+//    Vector::Coordinates currentCoordinates = {m_x, m_y, m_z};
+//    return currentCoordinates;
+//}
+
+void Vector::getVector(double coordinateArr[3])
 {
-    std::array<int, 3> vector{m_x, m_y, m_z};
-    return vector;
+    coordinateArr[0] = m_x;
+    coordinateArr[1] = m_y;
+    coordinateArr[2] = m_z;
 }
 
-Vector& Vector::addVector(std::array<int, 3> vector)
+Vector& Vector::addVector(Vector vector)
 {
-    m_x += vector[0];
-    m_y += vector[1];
-    m_z += vector[2];
+    m_x += vector.m_x;
+    m_y += vector.m_y;
+    m_z += vector.m_z;
     return *this;
 }
 
-Vector& Vector::subtractVector(std::array<int, 3> vector)
+Vector& Vector::subtractVector(Vector vector)
 {
-    m_x -= vector[0];
-    m_y -= vector[1];
-    m_z -= vector[2];
+    m_x -= vector.m_x;
+    m_y -= vector.m_y;
+    m_z -= vector.m_z;
     return *this;
 }
 
-Vector& Vector::scalarMultiply(int scalar)
+Vector& Vector::scalarMultiply(double scalar)
 {
     m_x *= scalar;
     m_y *= scalar;
@@ -33,35 +40,35 @@ Vector& Vector::scalarMultiply(int scalar)
     return *this;
 }
 
-Vector Vector::vectorSum(std::array<int, 3> vector1, std::array<int, 3> vector2)
+Vector Vector::vectorSum(Vector vector1, Vector vector2)
 {
-    Vector sum(vector1[0] + vector2[0], vector1[1] + vector2[1], vector1[2] + vector2[2]);
+    Vector sum(vector1.m_x + vector2.m_x, vector1.m_y + vector2.m_y, vector1.m_z + vector2.m_z);
     return sum;
 }
 
-Vector Vector::vectorDifference(std::array<int, 3> vector1, std::array<int, 3> vector2)
+Vector Vector::vectorDifference(Vector vector1, Vector vector2)
 {
-    Vector difference(vector1[0] - vector2[0], vector1[1] - vector2[1], vector1[2] - vector2[2]);
+    Vector difference(vector1.m_x - vector2.m_x, vector1.m_y - vector2.m_y, vector1.m_z - vector2.m_z);
     return difference;
 }
 
-Vector Vector::scalarProduct(std::array<int, 3> vector, int scalar)
+Vector Vector::scalarProduct(Vector vector, double scalar)
 {
-    Vector product(vector[0] * scalar, vector[1] * scalar, vector[2] * scalar);
+    Vector product(vector.m_x * scalar, vector.m_y * scalar, vector.m_z * scalar);
     return product;
 }
 
-int Vector::dotProduct(std::array<int, 3> vector1, std::array<int, 3> vector2)
+double Vector::dotProduct(Vector vector1, Vector vector2)
 {
-    int product(vector1[0] * vector2[0] + vector1[1] * vector2[1] + vector1[2] * vector2[2]);
+    double product(vector1.m_x * vector2.m_x + vector1.m_y * vector2.m_y + vector1.m_z * vector2.m_z);
     return product;
 }
 
-Vector Vector::crossProduct(std::array<int, 3> vector1, std::array<int, 3> vector2)
+Vector Vector::crossProduct(Vector vector1, Vector vector2)
 {
-    int x(vector1[1] * vector2[2] - vector1[2] * vector2[1]);
-    int y(vector1[2] * vector2[0] - vector1[0] * vector2[2]);
-    int z(vector1[0] * vector2[1] - vector1[1] * vector2[0]);
+    int x(vector1.m_y * vector2.m_z - vector1.m_z * vector2.m_y);
+    int y(vector1.m_z * vector2.m_x - vector1.m_x * vector2.m_z);
+    int z(vector1.m_x * vector2.m_y - vector1.m_y * vector2.m_x);
     Vector product(x, y, z);
     return product;
 }
@@ -72,13 +79,13 @@ double Vector::getLength()
     return length;
 }
 
-double Vector::calculateLength(std::array<int, 3> vector)
+double Vector::calculateLength(Vector vector)
 {
-    double length(Exponent::sqRoot(Exponent::power(vector[0], 2)  + Exponent::power(vector[1], 2) + Exponent::power(vector[2], 2)));
+    double length(Exponent::sqRoot(Exponent::power(vector.m_x, 2)  + Exponent::power(vector.m_y, 2) + Exponent::power(vector.m_z, 2)));
     return length;
 }
 
-double Vector::calculateAngle(std::array<int, 3> vector1, std::array<int, 3> vector2)
+double Vector::calculateAngle(Vector vector1, Vector vector2)
 {
     double angle(TrigFunctions::arccos(Vector::dotProduct(vector1, vector2) / (Vector::calculateLength(vector1) * Vector::calculateLength(vector2))));
     return angle;

@@ -15,6 +15,8 @@ factorial.h
 /home/aleppi/Projects/QuickMath/LinAlg/matrix.cpp
 matrix.h
 /home/aleppi/Projects/QuickMath/LinAlg/matrix.h
+vector.h
+/home/aleppi/Projects/QuickMath/LinAlg/vector.h
 
 /home/aleppi/Projects/QuickMath/LinAlg/matrix.h
 vector.h
@@ -31,8 +33,6 @@ vector.h
 /home/aleppi/Projects/QuickMath/Trig/trigFunctions.h
 
 /home/aleppi/Projects/QuickMath/LinAlg/vector.h
-array
--
 
 /home/aleppi/Projects/QuickMath/Math/exponent.cpp
 exponent.h

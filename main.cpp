@@ -8,11 +8,16 @@ int main()
     Vector v2(0, 1, 0);
     Vector v3(0, 0, 1);
     Matrix m1(v1, v2, v3);
-    Matrix::VectorSet matrix1 = m1.getMatrix();
+    Vector vectorSet[3];
+    m1.getMatrix(vectorSet);
     for (int i = 0; i < 3; ++i) {
-        std::cout << matrix1.column1.getVector()[i] << ' ';
-        std::cout << matrix1.column2.getVector()[i] << ' ';
-        std::cout << matrix1.column3.getVector()[i] << '\n';
+        double coordinates[3];
+        for (int j = 0; j < 3; ++j) {
+            vectorSet[j].getVector(coordinates);
+            std::cout << coordinates[i] << " ";
+        }
+        std::cout << '\n';
     }
+
     return 0;
 }
