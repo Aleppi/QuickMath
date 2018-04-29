@@ -24,9 +24,8 @@ Two functions, one to calculate Pascal's triangle and one to print Pascal's
 triangle.
 
 ### LinAlg
-A collection of functions to perform Linear Algebra calculations. Currently
-only supports calculations involving vectors.
-### Existing functions
+A collection of functions to perform Linear Algebra calculations. Currently supports range of calculations involving vectors as well as basic calculations involving matrices.
+#### Existing functions
 * getVector
 * addVector
 * subtractVector
@@ -39,6 +38,7 @@ only supports calculations involving vectors.
 * getLength
 * calculateLength
 * calculateAngle
+* getMatrix
 
 ### Trig
 A collection of functions to perform trigonometric operations. Currently
