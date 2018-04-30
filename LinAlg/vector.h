@@ -4,7 +4,7 @@
 class Vector {
     public:
         Vector() {};
-        Vector(int x, int y, int z) : m_x(x), m_y(y), m_z(z) {};
+        Vector(double x, double y, double z) : m_x(x), m_y(y), m_z(z) {};
         //struct Coordinates {
         //    double x;
         //    double y;

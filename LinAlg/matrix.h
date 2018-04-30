@@ -16,6 +16,7 @@ class Matrix {
         static Matrix matrixSum(Matrix matrix1, Matrix matrix2);
         static Matrix matrixDifference(Matrix matrix1, Matrix matrix2);
         static Matrix matrixScalarMultiplication(Matrix matrix, double scalar);
+        static Matrix matrixMultiplication(Matrix matrix1, Matrix matrix2);
     private:
         Vector m_column1;
         Vector m_column2;

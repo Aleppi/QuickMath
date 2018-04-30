@@ -4,9 +4,9 @@
 
 int main()
 {
-    Vector a(1, 2, -3);
-    Vector b(4, 2, 6);
-    Vector c(-3, 2, 1);
+    Vector a(1, 4, 7);
+    Vector b(2, 5, 8);
+    Vector c(3, 6, 9);
     Matrix m(a, b, c);
     Vector vectorSet[3];
     m.getMatrix(vectorSet);
@@ -20,7 +20,7 @@ int main()
     }
     std::cout << "\n\n";
     Matrix n(Vector(2, 2, 2), Vector(2, 2, 2), Vector(2, 2, 2));
-    Matrix newMatrix(Matrix::matrixScalarMultiplication(m, 2));
+    Matrix newMatrix(Matrix::matrixMultiplication(m, n));
     Vector vectors[3];
     newMatrix.getMatrix(vectors);
     for (int i = 0; i < 3; ++i) {

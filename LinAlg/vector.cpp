@@ -1,4 +1,3 @@
-#include <array>
 #include "vector.h"
 #include "../Math/exponent.h"
 #include "../Trig/trigFunctions.h"
