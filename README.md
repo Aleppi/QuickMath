@@ -41,6 +41,7 @@ A collection of functions to perform Linear Algebra calculations. Currently supp
 * matrixSum
 * matrixDifference
 * matrixScalarMultiplication
+* matrixMultiplication
 
 ### Trig
 A collection of functions to perform trigonometric operations. Currently
