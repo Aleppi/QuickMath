@@ -26,3 +26,8 @@ Matrix Matrix::matrixDifference(Matrix matrix1, Matrix matrix2)
     return difference;
 }
 
+Matrix Matrix::matrixScalarMultiplication(Matrix matrix, double scalar)
+{
+    Matrix product(Vector::vectorScalarMultiplication(matrix.m_column1, scalar), Vector::vectorScalarMultiplication(matrix.m_column2, scalar), Vector::vectorScalarMultiplication(matrix.m_column3, scalar));
+    return product;
+}

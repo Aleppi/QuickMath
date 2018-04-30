@@ -52,7 +52,7 @@ Vector Vector::vectorDifference(Vector vector1, Vector vector2)
     return difference;
 }
 
-Vector Vector::scalarProduct(Vector vector, double scalar)
+Vector Vector::vectorScalarMultiplication(Vector vector, double scalar)
 {
     Vector product(vector.m_x * scalar, vector.m_y * scalar, vector.m_z * scalar);
     return product;

@@ -17,7 +17,7 @@ class Vector {
         Vector& scalarMultiply(double scalar);
         static Vector vectorSum(Vector vector1, Vector vector2);
         static Vector vectorDifference(Vector vector1, Vector vector2);
-        static Vector scalarProduct(Vector vector, double scalar);
+        static Vector vectorScalarMultiplication(Vector vector, double scalar);
         static double dotProduct(Vector vector1, Vector vector2);
         static Vector crossProduct(Vector vector1, Vector vector2);
         double getLength();

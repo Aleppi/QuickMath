@@ -19,10 +19,10 @@ int main()
         std::cout << '\n';
     }
     std::cout << "\n\n";
-    Matrix n(Vector(1, 1, 1), Vector(1, 1, 1), Vector(1, 1, 1));
-    Matrix sum(Matrix::matrixSum(m, n));
+    Matrix n(Vector(2, 2, 2), Vector(2, 2, 2), Vector(2, 2, 2));
+    Matrix newMatrix(Matrix::matrixScalarMultiplication(m, 2));
     Vector vectors[3];
-    sum.getMatrix(vectors);
+    newMatrix.getMatrix(vectors);
     for (int i = 0; i < 3; ++i) {
         double coordinates[3];
         for (int j = 0; j < 3; ++j) {

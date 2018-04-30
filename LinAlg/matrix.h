@@ -15,6 +15,7 @@ class Matrix {
         void getMatrix(Vector vectorArr[3]);
         static Matrix matrixSum(Matrix matrix1, Matrix matrix2);
         static Matrix matrixDifference(Matrix matrix1, Matrix matrix2);
+        static Matrix matrixScalarMultiplication(Matrix matrix, double scalar);
     private:
         Vector m_column1;
         Vector m_column2;
