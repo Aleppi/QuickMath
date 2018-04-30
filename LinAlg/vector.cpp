@@ -2,12 +2,6 @@
 #include "../Math/exponent.h"
 #include "../Trig/trigFunctions.h"
 
-//Vector::Coordinates Vector::getVector()
-//{
-//    Vector::Coordinates currentCoordinates = {m_x, m_y, m_z};
-//    return currentCoordinates;
-//}
-
 void Vector::getVector(double coordinateArr[3])
 {
     coordinateArr[0] = m_x;

@@ -1,11 +1,5 @@
 #include "matrix.h"
 #include "vector.h"
-#include <iostream>
-//Matrix::VectorSet Matrix::getMatrix()
-//{
-//    VectorSet currentMatrix = {m_column1, m_column2, m_column3};
-//    return currentMatrix;
-//}
 
 void Matrix::getMatrix(Vector vectorArr[3])
 {

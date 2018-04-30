@@ -5,12 +5,6 @@ class Vector {
     public:
         Vector() {};
         Vector(double x, double y, double z) : m_x(x), m_y(y), m_z(z) {};
-        //struct Coordinates {
-        //    double x;
-        //    double y;
-        //    double z;
-        //};
-        //Coordinates getVector();
         void getVector(double coordinateArr[3]);
         Vector& addVector(Vector vector);
         Vector& subtractVector(Vector vector);
