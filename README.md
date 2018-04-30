@@ -31,13 +31,16 @@ A collection of functions to perform Linear Algebra calculations. Currently supp
 * scalarMultiply
 * vectorSum
 * vectorDifference
-* scalarProduct
+* vectorScalarMultiplication
 * dotProduct
 * crossProduct
 * getLength
 * calculateLength
 * calculateAngle
 * getMatrix
+* matrixSum
+* matrixDifference
+* matrixScalarMultiplication
 
 ### Trig
 A collection of functions to perform trigonometric operations. Currently
