@@ -19,3 +19,10 @@ Matrix Matrix::matrixSum(Matrix matrix1, Matrix matrix2)
     Matrix sum(Vector::vectorSum(matrix1.m_column1, matrix2.m_column1), Vector::vectorSum(matrix1.m_column2, matrix2.m_column2), Vector::vectorSum(matrix1.m_column3, matrix2.m_column3));
     return sum;
 }
+
+Matrix Matrix::matrixDifference(Matrix matrix1, Matrix matrix2)
+{
+    Matrix difference(Vector::vectorDifference(matrix1.m_column1, matrix2.m_column1), Vector::vectorDifference(matrix1.m_column2, matrix2.m_column2), Vector::vectorDifference(matrix1.m_column3, matrix2.m_column3));
+    return difference;
+}
+
