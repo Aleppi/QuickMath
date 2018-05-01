@@ -4,9 +4,9 @@
 
 int main()
 {
-    Vector a(1, 4, 7);
-    Vector b(2, 5, 8);
-    Vector c(3, 6, 9);
+    Vector a(1, 0, 0);
+    Vector b(0, 1, 0);
+    Vector c(0, 0, 1);
     Matrix m(a, b, c);
     Vector vectorSet[3];
     m.getMatrix(vectorSet);
@@ -18,18 +18,8 @@ int main()
         }
         std::cout << '\n';
     }
-    std::cout << "\n\n";
-    Matrix n(Vector(2, 2, 2), Vector(2, 2, 2), Vector(2, 2, 2));
-    Matrix newMatrix(Matrix::matrixMultiplication(m, n));
-    Vector vectors[3];
-    newMatrix.getMatrix(vectors);
-    for (int i = 0; i < 3; ++i) {
-        double coordinates[3];
-        for (int j = 0; j < 3; ++j) {
-            vectors[j].getVector(coordinates);
-            std::cout << coordinates[i] << " ";
-        }
-        std::cout << '\n';
-    }
+    std::cout << '\n';
+    double det = m.calculateDeterminant();
+    std::cout << det << '\n';
     return 0;
 }

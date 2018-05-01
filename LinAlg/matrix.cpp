@@ -75,3 +75,30 @@ Matrix Matrix::matrixMultiplication(Matrix matrix1, Matrix matrix2)
     delete[] matrixProductArr;
     return product;
 }
+
+double Matrix::calculateDeterminant()
+{
+    double *column1Arr = new double[3];
+    m_column1.getVector(column1Arr);
+    double *column2Arr = new double[3];
+    m_column2.getVector(column2Arr);
+    double *column3Arr = new double[3];
+    m_column3.getVector(column3Arr);   
+
+    double *matrixArr = new double[9]
+    {
+        column1Arr[0], column2Arr[0], column3Arr[0],
+        column1Arr[1], column2Arr[1], column3Arr[1],
+        column1Arr[2], column2Arr[2], column3Arr[2]
+    };
+
+    double det(matrixArr[0] * matrixArr[4] * matrixArr[8] + matrixArr[1] * matrixArr[5] * matrixArr[6] + matrixArr[2] * matrixArr[3] * matrixArr[7] - matrixArr[6] * matrixArr[4] * matrixArr[2] - matrixArr[7] * matrixArr[5] * matrixArr[0] - matrixArr[8] * matrixArr[3] * matrixArr[1]);
+
+    delete[] column1Arr;
+    delete[] column2Arr;
+    delete[] column3Arr;
+    delete[] matrixArr;
+    return det;
+}
+
+

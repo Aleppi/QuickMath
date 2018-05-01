@@ -11,6 +11,7 @@ class Matrix {
         static Matrix matrixDifference(Matrix matrix1, Matrix matrix2);
         static Matrix matrixScalarMultiplication(Matrix matrix, double scalar);
         static Matrix matrixMultiplication(Matrix matrix1, Matrix matrix2);
+        double calculateDeterminant();
     private:
         Vector m_column1;
         Vector m_column2;
