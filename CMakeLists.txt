@@ -17,4 +17,6 @@ add_executable(QuickMath.out
         LinAlg/matrix.cpp
         LinAlg/matrix.h
         Trig/trigFunctions.cpp
-        Trig/trigFunctions.h)
+        Trig/trigFunctions.h
+        Combi/combi.cpp
+        Combi/combi.h)

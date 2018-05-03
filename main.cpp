@@ -1,6 +1,7 @@
 #include <iostream>
 #include "LinAlg/vector.h"
 #include "LinAlg/matrix.h"
+#include "Combi/combi.h"
 
 int main()
 {
@@ -21,5 +22,7 @@ int main()
     std::cout << '\n';
     double det = m.calculateDeterminant();
     std::cout << det << '\n';
+
+    std::cout << Combi::calculateCombinations(12, 4) << '\n';
     return 0;
 }

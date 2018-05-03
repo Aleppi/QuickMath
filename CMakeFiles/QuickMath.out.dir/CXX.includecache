@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/aleppi/Projects/QuickMath/Combi/combi.cpp
+combi.h
+/home/aleppi/Projects/QuickMath/Combi/combi.h
+../Factorial/factorial.h
+/home/aleppi/Projects/QuickMath/Factorial/factorial.h
+../Math/exponent.h
+/home/aleppi/Projects/QuickMath/Math/exponent.h
+
+/home/aleppi/Projects/QuickMath/Combi/combi.h
+
 /home/aleppi/Projects/QuickMath/Factorial/factorial.cpp
 factorial.h
 /home/aleppi/Projects/QuickMath/Factorial/factorial.h
@@ -73,4 +83,6 @@ LinAlg/vector.h
 /home/aleppi/Projects/QuickMath/LinAlg/vector.h
 LinAlg/matrix.h
 /home/aleppi/Projects/QuickMath/LinAlg/matrix.h
+Combi/combi.h
+/home/aleppi/Projects/QuickMath/Combi/combi.h
 
