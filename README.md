@@ -47,3 +47,12 @@ A collection of functions to perform Linear Algebra calculations. Currently supp
 ### Trig
 A collection of functions to perform trigonometric operations. Currently
 supports sinus, cosine, and tangent functions as well as their inverses.
+
+### Combi
+A collection of simple functions to calculate the amount of permutations and
+combinations both without repetition and with repetition.
+#### Existing functions
+* calculatePermutations
+* calculateRepetitivePermutations
+* calculateCombinations
+* calculateRepetitiveCombinations
