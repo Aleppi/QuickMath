@@ -22,3 +22,8 @@ int Combi::calculateCombinations(int n, int k)
     int combinations(Factorial::calculateFactorial(n) / (Factorial::calculateFactorial(k) * Factorial::calculateFactorial(n - k)));
     return combinations;
 }
+
+int Combi::calculateRepetitiveCombinations(int n, int k)
+{
+    return Combi::calculateCombinations((n + k - 1), k);
+}
