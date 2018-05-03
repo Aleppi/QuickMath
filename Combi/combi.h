@@ -3,7 +3,8 @@
 class Combi {
     public:
         Combi() {};
-        int calculatePermutations(int n, int k);
-        int calculateCombinations(int n, int k);
-}
+        static int calculatePermutations(int n, int k);
+        static int calculateRepetitivePermutations(int n, int k);
+        static int calculateCombinations(int n, int k);
+};
 #endif

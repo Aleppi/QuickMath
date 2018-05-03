@@ -123,6 +123,33 @@ QuickMath.out/fast:
 	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/build
 .PHONY : QuickMath.out/fast
 
+Combi/combi.o: Combi/combi.cpp.o
+
+.PHONY : Combi/combi.o
+
+# target to build an object file
+Combi/combi.cpp.o:
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Combi/combi.cpp.o
+.PHONY : Combi/combi.cpp.o
+
+Combi/combi.i: Combi/combi.cpp.i
+
+.PHONY : Combi/combi.i
+
+# target to preprocess a source file
+Combi/combi.cpp.i:
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Combi/combi.cpp.i
+.PHONY : Combi/combi.cpp.i
+
+Combi/combi.s: Combi/combi.cpp.s
+
+.PHONY : Combi/combi.s
+
+# target to generate assembly for a file
+Combi/combi.cpp.s:
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Combi/combi.cpp.s
+.PHONY : Combi/combi.cpp.s
+
 Factorial/factorial.o: Factorial/factorial.cpp.o
 
 .PHONY : Factorial/factorial.o
@@ -321,6 +348,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... QuickMath.out"
+	@echo "... Combi/combi.o"
+	@echo "... Combi/combi.i"
+	@echo "... Combi/combi.s"
 	@echo "... Factorial/factorial.o"
 	@echo "... Factorial/factorial.i"
 	@echo "... Factorial/factorial.s"

@@ -1,13 +1,24 @@
 #include "combi.h"
+#include "../Factorial/factorial.h"
+#include "../Math/exponent.h"
 
-int calculatePermutations(int n, int k)
+int Combi::calculatePermutations(int n, int k)
 {
-    int permutations;
+    if (k > n)
+        return 0;
+    int permutations(Factorial::calculateFactorial(n) / Factorial::calculateFactorial(n - k));
     return permutations;
 }
 
-int calculateCombinations(int n, int k)
+int Combi::calculateRepetitivePermutations(int n, int k)
 {
-    int combinations;
+    return Exponent::power(k, n);
+}
+
+int Combi::calculateCombinations(int n, int k)
+{
+    if (k > n)
+        return 0;
+    int combinations(Factorial::calculateFactorial(n) / (Factorial::calculateFactorial(k) * Factorial::calculateFactorial(n - k)));
     return combinations;
 }
