@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -22,16 +22,6 @@ factorial.h
 
 /home/aleppi/Projects/QuickMath/Factorial/factorial.h
 
-/home/aleppi/Projects/QuickMath/LinAlg/matrix.cpp
-matrix.h
-/home/aleppi/Projects/QuickMath/LinAlg/matrix.h
-vector.h
-/home/aleppi/Projects/QuickMath/LinAlg/vector.h
-
-/home/aleppi/Projects/QuickMath/LinAlg/matrix.h
-vector.h
-/home/aleppi/Projects/QuickMath/LinAlg/vector.h
-
 /home/aleppi/Projects/QuickMath/LinAlg/vector.cpp
 vector.h
 /home/aleppi/Projects/QuickMath/LinAlg/vector.h
@@ -39,8 +29,12 @@ vector.h
 /home/aleppi/Projects/QuickMath/Math/exponent.h
 ../Trig/trigFunctions.h
 /home/aleppi/Projects/QuickMath/Trig/trigFunctions.h
+iostream
+-
 
 /home/aleppi/Projects/QuickMath/LinAlg/vector.h
+vector
+-
 
 /home/aleppi/Projects/QuickMath/Math/exponent.cpp
 exponent.h
@@ -81,8 +75,4 @@ iostream
 -
 LinAlg/vector.h
 /home/aleppi/Projects/QuickMath/LinAlg/vector.h
-LinAlg/matrix.h
-/home/aleppi/Projects/QuickMath/LinAlg/matrix.h
-Combi/combi.h
-/home/aleppi/Projects/QuickMath/Combi/combi.h
 

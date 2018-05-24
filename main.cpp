@@ -1,28 +1,25 @@
 #include <iostream>
 #include "LinAlg/vector.h"
-#include "LinAlg/matrix.h"
-#include "Combi/combi.h"
+//#include "LinAlg/matrix.h"
+//#include "Combi/combi.h"
 
 int main()
 {
-    Vector a(1, 0, 0);
-    Vector b(0, 1, 0);
-    Vector c(0, 0, 1);
-    Matrix m(a, b, c);
-    Vector vectorSet[3];
-    m.getMatrix(vectorSet);
-    for (int i = 0; i < 3; ++i) {
-        double coordinates[3];
-        for (int j = 0; j < 3; ++j) {
-            vectorSet[j].getVector(coordinates);
-            std::cout << coordinates[i] << " ";
-        }
-        std::cout << '\n';
+    Vector two(1, 2);
+    Vector v2(2, 3);
+    Vector four(3, 2, 4, 1);
+
+    for (int i = 0; i < size(two); ++i) {
+        std::cout << two[i] << '\n';
     }
     std::cout << '\n';
-    double det = m.calculateDeterminant();
-    std::cout << det << '\n';
-
-    std::cout << Combi::calculateCombinations(12, 4) << '\n';
+    for (int i = 0; i < size(v2); ++i) {
+        std::cout << v2[i] << '\n';
+    }
+    std::cout << '\n';
+    Vector sum(Vector::vectorSum(two, v2));
+    for (int i = 0; i < size(sum); ++i) {
+        std::cout << sum[i] << '\n';
+    }
     return 0;
 }
