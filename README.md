@@ -1,6 +1,5 @@
 # QuickMath
 An attempt at a math library with various mathematical functions written i C++.
-Doesn't use the `cmath` header and uses only the standard C++ library.
 
 ## Existing Implementations
 * Math
