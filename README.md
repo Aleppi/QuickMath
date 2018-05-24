@@ -1,6 +1,5 @@
 # QuickMath
 An attempt at a math library with various mathematical functions written i C++.
-Doesn't use the `cmath` header and uses only the standard C++ library.
 
 ## Existing Implementations
 * Math
@@ -23,7 +22,7 @@ Two functions, one to calculate Pascal's triangle and one to print Pascal's
 triangle.
 
 ### LinAlg
-A collection of functions to perform Linear Algebra calculations. Currently supports range of calculations involving vectors as well as basic calculations involving matrices. All vectors and matrices are at the moment only 3-dimensional.
+A collection of functions to perform Linear Algebra calculations. Currently supports range of calculations involving vectors as well as basic calculations involving matrices. Vectors can be 1, 2, 3 or 4 dimensional. Matrices are at the moment only 3-dimensional.
 #### Existing functions
 * getVector
 * addVector
