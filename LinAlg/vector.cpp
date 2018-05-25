@@ -36,34 +36,44 @@ Vector& Vector::scalarMultiply(double scalar)
 Vector Vector::vectorSum(Vector vector1, Vector vector2)
 {
     if (size(vector1) != size(vector2))
-        return Vector(0); //return null vector if the vectors can't be added
+        return Vector(0); //return null vector if the vectors have different dimensions
     std::vector<double> sumArr(size(vector1));
-    sumArr.reserve(size(vector1));
-    for (int i = 0; i < size(vector1); ++i) {
-        sumArr[i] = (vector1[i] + vector2[i]);
-    }
+    for (int i = 0; i < size(vector1); ++i)
+        sumArr[i] = vector1[i] + vector2[i];
     Vector sum(sumArr);
     return sum;
 }
 
-//Vector Vector::vectorDifference(Vector vector1, Vector vector2)
-//{
-//    Vector difference(vector1.m_x - vector2.m_x, vector1.m_y - vector2.m_y, vector1.m_z - vector2.m_z);
-//    return difference;
-//}
-//
-//Vector Vector::vectorScalarMultiplication(Vector vector, double scalar)
-//{
-//    Vector product(vector.m_x * scalar, vector.m_y * scalar, vector.m_z * scalar);
-//    return product;
-//}
-//
-//double Vector::dotProduct(Vector vector1, Vector vector2)
-//{
-//    double product(vector1.m_x * vector2.m_x + vector1.m_y * vector2.m_y + vector1.m_z * vector2.m_z);
-//    return product;
-//}
-//
+Vector Vector::vectorDifference(Vector vector1, Vector vector2)
+{
+    if (size(vector1) != size(vector2))
+        return Vector(0); //return null vector if the vectors have different dimensions
+    std::vector<double> differenceArr(size(vector1));
+    for (int i = 0; i < size(vector1); ++i)
+        differenceArr[i] = vector1[i] - vector2[i];
+    Vector difference(differenceArr);
+    return difference;
+}
+
+Vector Vector::vectorScalarMultiplication(Vector vector, double scalar)
+{
+    std::vector<double> productArr(size(vector));
+    for (int i = 0; i < size(vector); ++i)
+       productArr[i] = vector[i] * scalar;
+    Vector product(productArr);
+    return product;
+}
+
+double Vector::dotProduct(Vector vector1, Vector vector2)
+{
+    if (size(vector1) != size(vector2))
+        return 0; //return zero if the vectors have different dimensions
+    double product = 0;
+    for (int i = 0; i < size(vector1); ++i)
+        product += vector1[i] * vector2[i];
+    return product;
+}
+
 //Vector Vector::crossProduct(Vector vector1, Vector vector2)
 //{
 //    int x(vector1.m_y * vector2.m_z - vector1.m_z * vector2.m_y);

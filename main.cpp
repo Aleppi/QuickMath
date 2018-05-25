@@ -17,9 +17,6 @@ int main()
         std::cout << v2[i] << '\n';
     }
     std::cout << '\n';
-    Vector sum(Vector::vectorSum(two, v2));
-    for (int i = 0; i < size(sum); ++i) {
-        std::cout << sum[i] << '\n';
-    }
+    std::cout << Vector::dotProduct(two, v2) << '\n';
     return 0;
 }

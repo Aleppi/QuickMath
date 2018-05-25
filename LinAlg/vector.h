@@ -53,9 +53,9 @@ class Vector {
         Vector& subtractVector(Vector vector);
         Vector& scalarMultiply(double scalar);
         static Vector vectorSum(Vector vector1, Vector vector2);
-//        static Vector vectorDifference(Vector vector1, Vector vector2);
-//        static Vector vectorScalarMultiplication(Vector vector, double scalar);
-//        static double dotProduct(Vector vector1, Vector vector2);
+        static Vector vectorDifference(Vector vector1, Vector vector2);
+        static Vector vectorScalarMultiplication(Vector vector, double scalar);
+        static double dotProduct(Vector vector1, Vector vector2);
 //        static Vector crossProduct(Vector vector1, Vector vector2);
 //        double getLength();
 //        static double calculateLength(Vector vector);
