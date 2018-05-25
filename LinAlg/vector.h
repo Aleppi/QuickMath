@@ -44,9 +44,9 @@ class Vector {
         {
             return m_coordinates[index];
         }
-        friend int size(Vector &vector)
+        int size()
         {
-            return vector.m_coordinates.size();
+            return m_coordinates.size();
         }
         std::vector<double> getVector();
         Vector& addVector(Vector vector);
@@ -56,10 +56,10 @@ class Vector {
         static Vector vectorDifference(Vector vector1, Vector vector2);
         static Vector vectorScalarMultiplication(Vector vector, double scalar);
         static double dotProduct(Vector vector1, Vector vector2);
-//        static Vector crossProduct(Vector vector1, Vector vector2);
-//        double getLength();
-//        static double calculateLength(Vector vector);
-//        static double calculateAngle(Vector vector1, Vector vector2);
+        static Vector crossProduct(Vector vector1, Vector vector2);
+        double getLength();
+        static double calculateLength(Vector vector);
+        static double calculateAngle(Vector vector1, Vector vector2);
     private:
         std::vector<double> m_coordinates; 
 };

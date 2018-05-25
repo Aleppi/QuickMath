@@ -5,18 +5,23 @@
 
 int main()
 {
-    Vector two(1, 2);
-    Vector v2(2, 3);
-    Vector four(3, 2, 4, 1);
+    Vector i_hat(1, 0, 0);
+    Vector j_hat(0, 1, 0);
 
-    for (int i = 0; i < size(two); ++i) {
-        std::cout << two[i] << '\n';
+    for (int i = 0; i < i_hat.size(); ++i) {
+        std::cout << i_hat[i] << '\n';
     }
     std::cout << '\n';
-    for (int i = 0; i < size(v2); ++i) {
-        std::cout << v2[i] << '\n';
+    for (int i = 0; i < j_hat.size(); ++i) {
+        std::cout << j_hat[i] << '\n';
     }
     std::cout << '\n';
-    std::cout << Vector::dotProduct(two, v2) << '\n';
+    Vector k_hat(Vector::crossProduct(i_hat, j_hat));
+    for (int i = 0; i < k_hat.size(); ++i) {
+        std::cout << k_hat[i] << '\n';
+    }
+
+    std::cout << Vector::calculateAngle(i_hat, j_hat) << '\n';
+    std::cout << i_hat.getLength() << '\n';
     return 0;
 }

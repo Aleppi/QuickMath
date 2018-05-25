@@ -35,68 +35,67 @@ Vector& Vector::scalarMultiply(double scalar)
 
 Vector Vector::vectorSum(Vector vector1, Vector vector2)
 {
-    if (size(vector1) != size(vector2))
+    if (vector1.size() != vector2.size())
         return Vector(0); //return null vector if the vectors have different dimensions
-    std::vector<double> sumArr(size(vector1));
-    for (int i = 0; i < size(vector1); ++i)
+    std::vector<double> sumArr(vector1.size());
+    for (int i = 0; i < vector1.size(); ++i)
         sumArr[i] = vector1[i] + vector2[i];
-    Vector sum(sumArr);
-    return sum;
+    return Vector(sumArr);
 }
 
 Vector Vector::vectorDifference(Vector vector1, Vector vector2)
 {
-    if (size(vector1) != size(vector2))
+    if (vector1.size() != vector2.size())
         return Vector(0); //return null vector if the vectors have different dimensions
-    std::vector<double> differenceArr(size(vector1));
-    for (int i = 0; i < size(vector1); ++i)
+    std::vector<double> differenceArr(vector1.size());
+    for (int i = 0; i < vector1.size(); ++i)
         differenceArr[i] = vector1[i] - vector2[i];
-    Vector difference(differenceArr);
-    return difference;
+    return Vector(differenceArr);
 }
 
 Vector Vector::vectorScalarMultiplication(Vector vector, double scalar)
 {
-    std::vector<double> productArr(size(vector));
-    for (int i = 0; i < size(vector); ++i)
+    std::vector<double> productArr(vector.size());
+    for (int i = 0; i < vector.size(); ++i)
        productArr[i] = vector[i] * scalar;
-    Vector product(productArr);
-    return product;
+    return Vector(productArr);
 }
 
 double Vector::dotProduct(Vector vector1, Vector vector2)
 {
-    if (size(vector1) != size(vector2))
+    if (vector1.size() != vector2.size())
         return 0; //return zero if the vectors have different dimensions
     double product = 0;
-    for (int i = 0; i < size(vector1); ++i)
+    for (int i = 0; i < vector1.size(); ++i)
         product += vector1[i] * vector2[i];
     return product;
 }
 
-//Vector Vector::crossProduct(Vector vector1, Vector vector2)
-//{
-//    int x(vector1.m_y * vector2.m_z - vector1.m_z * vector2.m_y);
-//    int y(vector1.m_z * vector2.m_x - vector1.m_x * vector2.m_z);
-//    int z(vector1.m_x * vector2.m_y - vector1.m_y * vector2.m_x);
-//    Vector product(x, y, z);
-//    return product;
-//}
-//
-//double Vector::getLength()
-//{
-//    double length(Exponent::sqRoot(Exponent::power(m_x, 2) + Exponent::power(m_y, 2) + Exponent::power(m_z, 2)));
-//    return length;
-//}
-//
-//double Vector::calculateLength(Vector vector)
-//{
-//    double length(Exponent::sqRoot(Exponent::power(vector.m_x, 2)  + Exponent::power(vector.m_y, 2) + Exponent::power(vector.m_z, 2)));
-//    return length;
-//}
-//
-//double Vector::calculateAngle(Vector vector1, Vector vector2)
-//{
-//    double angle(TrigFunctions::arccos(Vector::dotProduct(vector1, vector2) / (Vector::calculateLength(vector1) * Vector::calculateLength(vector2))));
-//    return angle;
-//}
+Vector Vector::crossProduct(Vector vector1, Vector vector2)
+{
+    if (vector1.size() != vector2.size() || vector1.size() != 3)
+        return Vector(0); //return null vector if the vectors have different dimensions or are not equal to 3
+    return Vector((vector1[1] * vector2[2] - vector1[2] * vector2[1]), (vector1[2] * vector2[0] - vector1[0] * vector2[2]), (vector1[0] * vector2[1] - vector1[1] * vector2[0]));
+}
+
+double Vector::getLength()
+{
+    double lengthSquared = 0;
+    for (int i = 0; i < m_coordinates.size(); ++i)
+        lengthSquared += Exponent::power(m_coordinates[i], 2);
+    return Exponent::sqRoot(lengthSquared);
+}
+
+double Vector::calculateLength(Vector vector)
+{
+    double lengthSquared = 0;
+    for (int i = 0; i < vector.size(); ++i)
+        lengthSquared += Exponent::power(vector[i], 2);
+    return Exponent::sqRoot(lengthSquared);
+}
+
+double Vector::calculateAngle(Vector vector1, Vector vector2)
+{
+    double angle(TrigFunctions::arccos(Vector::dotProduct(vector1, vector2) / (Vector::calculateLength(vector1) * Vector::calculateLength(vector2))));
+    return angle;
+}
