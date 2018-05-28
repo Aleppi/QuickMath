@@ -19,11 +19,15 @@ class Matrix {
         }
         std::vector<double> getMatrix();
         std::vector<double>& setMatrix();
+        Vector getRowVector(unsigned int row);
+        Vector getColumnVector(unsigned int column);
+        unsigned int getRows();
+        unsigned int getColumns();
         void zero();
         static Matrix matrixSum(Matrix matrix1, Matrix matrix2);
-//        static Matrix matrixDifference(Matrix matrix1, Matrix matrix2);
-//        static Matrix matrixScalarMultiplication(Matrix matrix, double scalar);
-//        static Matrix matrixMultiplication(Matrix matrix1, Matrix matrix2);
+        static Matrix matrixDifference(Matrix matrix1, Matrix matrix2);
+        static Matrix matrixScalarMultiplication(Matrix matrix, double scalar);
+        static Matrix matrixMultiplication(Matrix matrix1, Matrix matrix2);
 //        double calculateDeterminant();
     private:
         std::vector<double> m_matrix;

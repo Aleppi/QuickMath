@@ -22,7 +22,7 @@ Two functions, one to calculate Pascal's triangle and one to print Pascal's
 triangle.
 
 ### LinAlg
-A collection of functions to perform Linear Algebra calculations. Currently supports range of calculations involving vectors as well as basic calculations involving matrices. Vectors can be 1, 2, 3 or 4 dimensional. Matrices are not rewritten yet.
+A collection of functions to perform Linear Algebra calculations. Currently supports range of calculations involving vectors as well as basic calculations involving matrices. Vectors can be initialized with values to be 1, 2, 3 or 4 dimensional but can also be initialized with a std::vector to be of any dimension. Matrices can be of any dimension.
 #### Existing functions
 * getVector
 * addVector
