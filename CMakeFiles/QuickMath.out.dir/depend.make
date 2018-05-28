@@ -12,6 +12,7 @@ CMakeFiles/QuickMath.out.dir/Factorial/factorial.cpp.o: Factorial/factorial.h
 CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.o: LinAlg/matrix.cpp
 CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.o: LinAlg/matrix.h
 CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.o: LinAlg/vector.h
+CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.o: Math/exponent.h
 
 CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.o: LinAlg/vector.cpp
 CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.o: LinAlg/vector.h

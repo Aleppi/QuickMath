@@ -1,5 +1,6 @@
 #include "matrix.h"
 #include "vector.h"
+#include "../Math/exponent.h"
 
 std::vector<double> Matrix::getMatrix()
 {
@@ -15,9 +16,8 @@ Vector Matrix::getRowVector(unsigned int row)
 {
     std::vector<double> rowVector;
     rowVector.reserve(m_columns);
-    rowVector.resize(m_columns);
     for (int i = 0; i < m_columns; ++i)
-        rowVector[i] = (*this)(row, i);
+        rowVector.push_back((*this)(row, i));
     return Vector(rowVector);
 }
 
@@ -25,10 +25,22 @@ Vector Matrix::getColumnVector(unsigned int column)
 { 
     std::vector<double> columnVector;
     columnVector.reserve(m_rows);
-    columnVector.resize(m_rows);
     for (int i = 0; i < m_rows; ++i)
-        columnVector[i] = (*this)(i, column);
+        columnVector.push_back((*this)(i, column));
     return Vector(columnVector);
+}
+
+Matrix Matrix::getSubMatrix(unsigned int row, unsigned int column)
+{
+    std::vector<double> subMatrix;
+    subMatrix.reserve((m_rows - 1) * (m_columns - 1));
+    for (int i = 0; i < m_rows; ++i) {
+        for (int j = 0; j < m_columns; ++j) {
+            if (i + 1 != row && j + 1 != column)
+                subMatrix.push_back((*this)(i, j));
+        }
+    }
+    return Matrix(m_rows - 1, m_columns - 1, subMatrix);
 }
 
 unsigned int Matrix::getRows()
@@ -108,29 +120,25 @@ Matrix Matrix::matrixMultiplication(Matrix matrix1, Matrix matrix2)
     return product;
 }
 
-//double Matrix::calculateDeterminant()
-//{
-//    double *column1Arr = new double[3];
-//    m_column1.getVector(column1Arr);
-//    double *column2Arr = new double[3];
-//    m_column2.getVector(column2Arr);
-//    double *column3Arr = new double[3];
-//    m_column3.getVector(column3Arr);   
-//
-//    double *matrixArr = new double[9]
-//    {
-//        column1Arr[0], column2Arr[0], column3Arr[0],
-//        column1Arr[1], column2Arr[1], column3Arr[1],
-//        column1Arr[2], column2Arr[2], column3Arr[2]
-//    };
-//
-//    double det(matrixArr[0] * matrixArr[4] * matrixArr[8] + matrixArr[1] * matrixArr[5] * matrixArr[6] + matrixArr[2] * matrixArr[3] * matrixArr[7] - matrixArr[6] * matrixArr[4] * matrixArr[2] - matrixArr[7] * matrixArr[5] * matrixArr[0] - matrixArr[8] * matrixArr[3] * matrixArr[1]);
-//
-//    delete[] column1Arr;
-//    delete[] column2Arr;
-//    delete[] column3Arr;
-//    delete[] matrixArr;
-//    return det;
-//}
-
-
+double Matrix::calculateDeterminant()
+{
+    if (m_rows != m_columns)
+         //If the matrix is non-square throw an exception here in the future
+    if (m_rows == 2 && m_columns == 2)
+        return m_matrix[0] * m_matrix[3] - m_matrix[1] * m_matrix[2];
+    unsigned int dim(m_rows * m_columns);
+    std::vector<double> minor;
+    minor.reserve(dim);
+    minor.resize(dim);
+    for (int j = 0; j < m_columns; ++j)
+        minor[j] = (*this).getSubMatrix(1, j).calculateDeterminant();
+    std::vector<double> cofactor;
+    cofactor.reserve(dim);
+    cofactor.resize(dim);
+    for (int i = 0; i < m_rows; ++i)
+        cofactor[i] = Exponent::power(-1, i + 1) * ((*this).getSubMatrix(i, 1).calculateDeterminant());
+    double det = 0;
+    for (int i = 0; i < cofactor.size(); ++i)
+        det += cofactor[i];
+    return det;
+}
