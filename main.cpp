@@ -1,6 +1,6 @@
 #include <iostream>
 #include "LinAlg/vector.h"
-//#include "LinAlg/matrix.h"
+#include "LinAlg/matrix.h"
 //#include "Combi/combi.h"
 
 int main()
@@ -23,5 +23,12 @@ int main()
 
     std::cout << Vector::calculateAngle(i_hat, j_hat) << '\n';
     std::cout << i_hat.getLength() << '\n';
+
+    Matrix m(2, 2);
+    Matrix n(2, 2);
+    m.setMatrix() = {3, 4, 5, 8};
+    n.setMatrix() = {1, 1, 1, 1};
+    Matrix o(Matrix::matrixSum(m, n));
+    std::cout << o(0, 0) << '\n';
     return 0;
 }

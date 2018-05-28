@@ -177,6 +177,33 @@ Factorial/factorial.cpp.s:
 	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/Factorial/factorial.cpp.s
 .PHONY : Factorial/factorial.cpp.s
 
+LinAlg/matrix.o: LinAlg/matrix.cpp.o
+
+.PHONY : LinAlg/matrix.o
+
+# target to build an object file
+LinAlg/matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.o
+.PHONY : LinAlg/matrix.cpp.o
+
+LinAlg/matrix.i: LinAlg/matrix.cpp.i
+
+.PHONY : LinAlg/matrix.i
+
+# target to preprocess a source file
+LinAlg/matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.i
+.PHONY : LinAlg/matrix.cpp.i
+
+LinAlg/matrix.s: LinAlg/matrix.cpp.s
+
+.PHONY : LinAlg/matrix.s
+
+# target to generate assembly for a file
+LinAlg/matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/QuickMath.out.dir/build.make CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.s
+.PHONY : LinAlg/matrix.cpp.s
+
 LinAlg/vector.o: LinAlg/vector.cpp.o
 
 .PHONY : LinAlg/vector.o
@@ -327,6 +354,9 @@ help:
 	@echo "... Factorial/factorial.o"
 	@echo "... Factorial/factorial.i"
 	@echo "... Factorial/factorial.s"
+	@echo "... LinAlg/matrix.o"
+	@echo "... LinAlg/matrix.i"
+	@echo "... LinAlg/matrix.s"
 	@echo "... LinAlg/vector.o"
 	@echo "... LinAlg/vector.i"
 	@echo "... LinAlg/vector.s"

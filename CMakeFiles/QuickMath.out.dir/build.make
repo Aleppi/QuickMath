@@ -122,9 +122,22 @@ CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aleppi/Projects/QuickMath/LinAlg/vector.cpp -o CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.s
 
+CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.o: CMakeFiles/QuickMath.out.dir/flags.make
+CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.o: LinAlg/matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aleppi/Projects/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.o -c /home/aleppi/Projects/QuickMath/LinAlg/matrix.cpp
+
+CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aleppi/Projects/QuickMath/LinAlg/matrix.cpp > CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.i
+
+CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aleppi/Projects/QuickMath/LinAlg/matrix.cpp -o CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.s
+
 CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.o: CMakeFiles/QuickMath.out.dir/flags.make
 CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.o: Trig/trigFunctions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aleppi/Projects/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aleppi/Projects/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.o -c /home/aleppi/Projects/QuickMath/Trig/trigFunctions.cpp
 
 CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.s: cmake_force
 
 CMakeFiles/QuickMath.out.dir/Combi/combi.cpp.o: CMakeFiles/QuickMath.out.dir/flags.make
 CMakeFiles/QuickMath.out.dir/Combi/combi.cpp.o: Combi/combi.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aleppi/Projects/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/QuickMath.out.dir/Combi/combi.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aleppi/Projects/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/QuickMath.out.dir/Combi/combi.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuickMath.out.dir/Combi/combi.cpp.o -c /home/aleppi/Projects/QuickMath/Combi/combi.cpp
 
 CMakeFiles/QuickMath.out.dir/Combi/combi.cpp.i: cmake_force
@@ -155,6 +168,7 @@ QuickMath_out_OBJECTS = \
 "CMakeFiles/QuickMath.out.dir/Pascal/pascal.cpp.o" \
 "CMakeFiles/QuickMath.out.dir/Factorial/factorial.cpp.o" \
 "CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.o" \
+"CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.o" \
 "CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.o" \
 "CMakeFiles/QuickMath.out.dir/Combi/combi.cpp.o"
 
@@ -166,11 +180,12 @@ QuickMath.out: CMakeFiles/QuickMath.out.dir/Math/exponent.cpp.o
 QuickMath.out: CMakeFiles/QuickMath.out.dir/Pascal/pascal.cpp.o
 QuickMath.out: CMakeFiles/QuickMath.out.dir/Factorial/factorial.cpp.o
 QuickMath.out: CMakeFiles/QuickMath.out.dir/LinAlg/vector.cpp.o
+QuickMath.out: CMakeFiles/QuickMath.out.dir/LinAlg/matrix.cpp.o
 QuickMath.out: CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.o
 QuickMath.out: CMakeFiles/QuickMath.out.dir/Combi/combi.cpp.o
 QuickMath.out: CMakeFiles/QuickMath.out.dir/build.make
 QuickMath.out: CMakeFiles/QuickMath.out.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aleppi/Projects/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable QuickMath.out"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aleppi/Projects/QuickMath/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable QuickMath.out"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/QuickMath.out.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
