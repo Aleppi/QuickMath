@@ -122,23 +122,19 @@ Matrix Matrix::matrixMultiplication(Matrix matrix1, Matrix matrix2)
 
 double Matrix::calculateDeterminant()
 {
-    if (m_rows != m_columns)
+    if (m_rows != m_columns) {
          //If the matrix is non-square throw an exception here in the future
+    }
     if (m_rows == 2 && m_columns == 2)
         return m_matrix[0] * m_matrix[3] - m_matrix[1] * m_matrix[2];
-    unsigned int dim(m_rows * m_columns);
-    std::vector<double> minor;
-    minor.reserve(dim);
-    minor.resize(dim);
-    for (int j = 0; j < m_columns; ++j)
-        minor[j] = (*this).getSubMatrix(1, j).calculateDeterminant();
     std::vector<double> cofactor;
-    cofactor.reserve(dim);
-    cofactor.resize(dim);
+    cofactor.reserve(m_rows * m_columns);
+    cofactor.resize(m_rows * m_columns);
     for (int i = 0; i < m_rows; ++i)
-        cofactor[i] = Exponent::power(-1, i + 1) * ((*this).getSubMatrix(i, 1).calculateDeterminant());
+        cofactor[i] = (Exponent::power(-1, (i + 1))) * ((*this).getSubMatrix(i, 1).calculateDeterminant());
     double det = 0;
-    for (int i = 0; i < cofactor.size(); ++i)
-        det += cofactor[i];
+    for (int i = 0; i < cofactor.size(); ++i) {
+        det += (*this)(i, 1) * cofactor[i];
+    }
     return det;
 }
