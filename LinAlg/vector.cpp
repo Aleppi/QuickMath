@@ -1,81 +1,97 @@
 #include "vector.h"
 #include "../Math/exponent.h"
 #include "../Trig/trigFunctions.h"
+#include <iostream>
 
-void Vector::getVector(double coordinateArr[3])
+std::vector<double> Vector::getVector()
 {
-    coordinateArr[0] = m_x;
-    coordinateArr[1] = m_y;
-    coordinateArr[2] = m_z;
+    return m_coordinates;
 }
 
 Vector& Vector::addVector(Vector vector)
 {
-    m_x += vector.m_x;
-    m_y += vector.m_y;
-    m_z += vector.m_z;
+    if (m_coordinates.size() != vector.m_coordinates.size())
+        return *this;
+    for (int i = 0; i < m_coordinates.size(); ++i)
+        m_coordinates[i] += vector.m_coordinates[i];
     return *this;
 }
 
 Vector& Vector::subtractVector(Vector vector)
 {
-    m_x -= vector.m_x;
-    m_y -= vector.m_y;
-    m_z -= vector.m_z;
+    if (m_coordinates.size() != vector.m_coordinates.size())
+        return *this;
+    for (int i = 0; i < m_coordinates.size(); ++i)
+        m_coordinates[i] -= vector.m_coordinates[i];
     return *this;
 }
 
 Vector& Vector::scalarMultiply(double scalar)
 {
-    m_x *= scalar;
-    m_y *= scalar;
-    m_z *= scalar;
+    for (int i = 0; i < m_coordinates.size(); ++i)
+        m_coordinates[i] *= scalar;
     return *this;
 }
 
 Vector Vector::vectorSum(Vector vector1, Vector vector2)
 {
-    Vector sum(vector1.m_x + vector2.m_x, vector1.m_y + vector2.m_y, vector1.m_z + vector2.m_z);
-    return sum;
+    if (vector1.size() != vector2.size())
+        return Vector(0); //return null vector if the vectors have different dimensions
+    std::vector<double> sumArr(vector1.size());
+    for (int i = 0; i < vector1.size(); ++i)
+        sumArr[i] = vector1[i] + vector2[i];
+    return Vector(sumArr);
 }
 
 Vector Vector::vectorDifference(Vector vector1, Vector vector2)
 {
-    Vector difference(vector1.m_x - vector2.m_x, vector1.m_y - vector2.m_y, vector1.m_z - vector2.m_z);
-    return difference;
+    if (vector1.size() != vector2.size())
+        return Vector(0); //return null vector if the vectors have different dimensions
+    std::vector<double> differenceArr(vector1.size());
+    for (int i = 0; i < vector1.size(); ++i)
+        differenceArr[i] = vector1[i] - vector2[i];
+    return Vector(differenceArr);
 }
 
 Vector Vector::vectorScalarMultiplication(Vector vector, double scalar)
 {
-    Vector product(vector.m_x * scalar, vector.m_y * scalar, vector.m_z * scalar);
-    return product;
+    std::vector<double> productArr(vector.size());
+    for (int i = 0; i < vector.size(); ++i)
+       productArr[i] = vector[i] * scalar;
+    return Vector(productArr);
 }
 
 double Vector::dotProduct(Vector vector1, Vector vector2)
 {
-    double product(vector1.m_x * vector2.m_x + vector1.m_y * vector2.m_y + vector1.m_z * vector2.m_z);
+    if (vector1.size() != vector2.size())
+        return 0; //return zero if the vectors have different dimensions
+    double product = 0;
+    for (int i = 0; i < vector1.size(); ++i)
+        product += vector1[i] * vector2[i];
     return product;
 }
 
 Vector Vector::crossProduct(Vector vector1, Vector vector2)
 {
-    int x(vector1.m_y * vector2.m_z - vector1.m_z * vector2.m_y);
-    int y(vector1.m_z * vector2.m_x - vector1.m_x * vector2.m_z);
-    int z(vector1.m_x * vector2.m_y - vector1.m_y * vector2.m_x);
-    Vector product(x, y, z);
-    return product;
+    if (vector1.size() != vector2.size() || vector1.size() != 3)
+        return Vector(0); //return null vector if the vectors have different dimensions or are not equal to 3
+    return Vector((vector1[1] * vector2[2] - vector1[2] * vector2[1]), (vector1[2] * vector2[0] - vector1[0] * vector2[2]), (vector1[0] * vector2[1] - vector1[1] * vector2[0]));
 }
 
 double Vector::getLength()
 {
-    double length(Exponent::sqRoot(Exponent::power(m_x, 2) + Exponent::power(m_y, 2) + Exponent::power(m_z, 2)));
-    return length;
+    double lengthSquared = 0;
+    for (int i = 0; i < m_coordinates.size(); ++i)
+        lengthSquared += Exponent::power(m_coordinates[i], 2);
+    return Exponent::sqRoot(lengthSquared);
 }
 
 double Vector::calculateLength(Vector vector)
 {
-    double length(Exponent::sqRoot(Exponent::power(vector.m_x, 2)  + Exponent::power(vector.m_y, 2) + Exponent::power(vector.m_z, 2)));
-    return length;
+    double lengthSquared = 0;
+    for (int i = 0; i < vector.size(); ++i)
+        lengthSquared += Exponent::power(vector[i], 2);
+    return Exponent::sqRoot(lengthSquared);
 }
 
 double Vector::calculateAngle(Vector vector1, Vector vector2)
