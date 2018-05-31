@@ -31,10 +31,12 @@ class Matrix {
         unsigned int getRows();
         unsigned int getColumns();
         void zero();
+        Vector linearTransform(Vector vector);
         static Matrix matrixSum(Matrix matrix1, Matrix matrix2);
         static Matrix matrixDifference(Matrix matrix1, Matrix matrix2);
         static Matrix matrixScalarMultiplication(Matrix matrix, double scalar);
         static Matrix matrixMultiplication(Matrix matrix1, Matrix matrix2);
+        static Vector linearTransformation(Matrix matrix, Vector vector);
         double calculateDeterminant();
     private:
         std::vector<double> m_matrix;

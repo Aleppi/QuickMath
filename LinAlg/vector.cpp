@@ -99,3 +99,5 @@ double Vector::calculateAngle(Vector vector1, Vector vector2)
     double angle(TrigFunctions::arccos(Vector::dotProduct(vector1, vector2) / (Vector::calculateLength(vector1) * Vector::calculateLength(vector2))));
     return angle;
 }
+
+

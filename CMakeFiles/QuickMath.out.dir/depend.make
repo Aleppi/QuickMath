@@ -34,5 +34,6 @@ CMakeFiles/QuickMath.out.dir/Trig/trigFunctions.cpp.o: config.h
 
 CMakeFiles/QuickMath.out.dir/main.cpp.o: LinAlg/matrix.h
 CMakeFiles/QuickMath.out.dir/main.cpp.o: LinAlg/vector.h
+CMakeFiles/QuickMath.out.dir/main.cpp.o: Math/operators.h
 CMakeFiles/QuickMath.out.dir/main.cpp.o: main.cpp
 

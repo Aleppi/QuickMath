@@ -58,6 +58,12 @@ exponent.h
 
 /home/aleppi/Projects/QuickMath/Math/exponent.h
 
+/home/aleppi/Projects/QuickMath/Math/operators.h
+../LinAlg/vector.h
+/home/aleppi/Projects/QuickMath/LinAlg/vector.h
+../LinAlg/matrix.h
+/home/aleppi/Projects/QuickMath/LinAlg/matrix.h
+
 /home/aleppi/Projects/QuickMath/Pascal/pascal.cpp
 iostream
 -
@@ -91,4 +97,6 @@ LinAlg/vector.h
 /home/aleppi/Projects/QuickMath/LinAlg/vector.h
 LinAlg/matrix.h
 /home/aleppi/Projects/QuickMath/LinAlg/matrix.h
+Math/operators.h
+/home/aleppi/Projects/QuickMath/Math/operators.h
 

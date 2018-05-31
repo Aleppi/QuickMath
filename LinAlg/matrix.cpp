@@ -62,6 +62,11 @@ void Matrix::zero()
     }
 }
 
+Vector Matrix::linearTransform(Vector vector)
+{
+    return Vector(Matrix::matrixMultiplication((*this), Matrix(vector.size(), 1, vector.getVector())).getMatrix());
+}
+
 Matrix Matrix::matrixSum(Matrix matrix1, Matrix matrix2)
 {
     if (matrix1.m_rows != matrix2.m_rows || matrix1.m_columns != matrix2.m_columns) {
@@ -120,6 +125,11 @@ Matrix Matrix::matrixMultiplication(Matrix matrix1, Matrix matrix2)
     return product;
 }
 
+Vector Matrix::linearTransformation(Matrix matrix, Vector vector)
+{
+    return Vector(Matrix::matrixMultiplication(matrix, Matrix(vector.size(), 1, vector.getVector())).getMatrix());
+}
+
 double Matrix::calculateDeterminant()
 {
     if (m_rows != m_columns) {
@@ -138,3 +148,4 @@ double Matrix::calculateDeterminant()
     }
     return det;
 }
+

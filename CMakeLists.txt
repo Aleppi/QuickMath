@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 11)
 add_executable(QuickMath.out
         main.cpp
         config.h
+        Math/operators.h
         Math/exponent.cpp
         Math/exponent.h
         Pascal/pascal.cpp

@@ -2,6 +2,7 @@
 #define VECTOR_H
 #include <vector>
 
+
 class Vector {
     public:
         Vector(double x)
