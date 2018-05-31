@@ -1,6 +1,14 @@
 # QuickMath
 An attempt at a math library with various mathematical functions written i C++.
 
+## Building
+To build the library, just run:
+```
+mkdir build && cd build && cmake ..
+```
+Then just run `./QuickMath.out` to run main with any functions from the
+library. To clean up the build files just run `rm -rf build`.
+
 ## Existing Implementations
 * Math
 * Factorial
@@ -38,10 +46,19 @@ A collection of functions to perform Linear Algebra calculations. Currently supp
 * calculateAngle
 * size
 * getMatrix
+* setMatrix
+* getRowVector
+* getColumnVector
+* getSubMatrix
+* getRows
+* getColumns
+* zero
+* linearTransform
 * matrixSum
 * matrixDifference
 * matrixScalarMultiplication
 * matrixMultiplication
+* linearTransformation
 * calculateDeterminant
 
 ### Trig
