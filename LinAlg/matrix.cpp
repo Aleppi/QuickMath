@@ -1,7 +1,7 @@
 #include "matrix.h"
 #include "vector.h"
 #include "../Math/exponent.h"
-#include <iostream>
+
 std::vector<double> Matrix::getMatrix()
 {
     return m_matrix;
