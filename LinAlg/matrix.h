@@ -38,6 +38,14 @@ class Matrix {
         static Matrix matrixMultiplication(Matrix matrix1, Matrix matrix2);
         static Vector linearTransformation(Matrix matrix, Vector vector);
         double calculateDeterminant();
+        Matrix transpose();
+        static Matrix matrixTranspose(Matrix matrix);
+        Matrix getCofactorMatrix();
+        static Matrix cofactorMatrix(Matrix matrix);
+        Matrix getAdjugateMatrix();
+        static Matrix adjugateMatrix(Matrix matrix);
+        Matrix getInverseMatrix();
+        static Matrix inverseMatrix(Matrix matrix);
     private:
         std::vector<double> m_matrix;
         unsigned int m_rows;

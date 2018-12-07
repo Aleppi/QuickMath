@@ -1,7 +1,7 @@
 #include "matrix.h"
 #include "vector.h"
 #include "../Math/exponent.h"
-
+#include <iostream>
 std::vector<double> Matrix::getMatrix()
 {
     return m_matrix;
@@ -36,7 +36,7 @@ Matrix Matrix::getSubMatrix(unsigned int row, unsigned int column)
     subMatrix.reserve((m_rows - 1) * (m_columns - 1));
     for (int i = 0; i < m_rows; ++i) {
         for (int j = 0; j < m_columns; ++j) {
-            if (i + 1 != row && j + 1 != column)
+            if (i != row && j != column)
                 subMatrix.push_back((*this)(i, j));
         }
     }
@@ -133,19 +133,96 @@ Vector Matrix::linearTransformation(Matrix matrix, Vector vector)
 double Matrix::calculateDeterminant()
 {
     if (m_rows != m_columns) {
+        return 0;
          //If the matrix is non-square throw an exception here in the future
     }
     if (m_rows == 2 && m_columns == 2)
         return m_matrix[0] * m_matrix[3] - m_matrix[1] * m_matrix[2];
-    std::vector<double> cofactor;
-    cofactor.reserve(m_rows * m_columns);
-    cofactor.resize(m_rows * m_columns);
-    for (int i = 0; i < m_rows; ++i)
-        cofactor[i] = (Exponent::power(-1, (i + 1))) * ((*this).getSubMatrix(i, 1).calculateDeterminant());
+    std::vector<double> minor;
+    minor.reserve(m_columns);
+    minor.resize(m_columns);
+    for (int j = 0; j < m_columns; ++j) {
+        minor[j] = (*this).getSubMatrix(0, j).calculateDeterminant();
+    }
     double det = 0;
-    for (int i = 0; i < cofactor.size(); ++i) {
-        det += (*this)(i, 1) * cofactor[i];
+    for (int j = 0; j < minor.size(); ++j) {
+        det += Exponent::power(-1, (2 + j)) * (*this)(0, j) * minor[j];
     }
     return det;
 }
 
+Matrix Matrix::transpose()
+{
+    Matrix transpose(m_columns, m_rows);
+    for (int i = 0; i < m_rows; ++i) {
+        for (int j = 0; j < m_columns; ++j) {
+            transpose(i, j) = (*this)(j, i);
+        }
+    }
+    return transpose;
+}
+
+Matrix Matrix::matrixTranspose(Matrix matrix)
+{
+    Matrix transpose(matrix.m_columns, matrix.m_rows);
+    for (int i = 0; i < transpose.m_rows; ++i) {
+        for (int j = 0; j < transpose.m_columns; ++j) {
+            transpose(i, j) = matrix(j, i);
+        }
+    }
+    return transpose;
+}
+
+Matrix Matrix::getCofactorMatrix()
+{
+    Matrix cofactor(m_rows, m_columns);
+    for (int i = 0; i < m_rows; ++i) {
+        for (int j = 0; j < m_columns; ++j) {
+            cofactor(i, j) = (*this).getSubMatrix(i, j).calculateDeterminant() * Exponent::power(-1, (i + j + 2));
+        }
+    }
+    return cofactor;
+}
+
+Matrix Matrix::cofactorMatrix(Matrix matrix)
+{
+    Matrix cofactor(matrix.m_rows, matrix.m_columns);
+    for (int i = 0; i < cofactor.m_rows; ++i) {
+        for (int j = 0; j < cofactor.m_columns; ++j) {
+            cofactor(i, j) = matrix.getSubMatrix(i, j).calculateDeterminant() * Exponent::power(-1, (i + j + 2));
+        }
+    }
+    return cofactor;
+}
+
+Matrix Matrix::getAdjugateMatrix()
+{
+    return (*this).getCofactorMatrix().transpose();
+}
+
+Matrix Matrix::adjugateMatrix(Matrix matrix)
+{
+    return Matrix::matrixTranspose(Matrix::cofactorMatrix(matrix));
+}
+
+Matrix Matrix::getInverseMatrix()
+{
+    double det((*this).calculateDeterminant());
+    if (!det) {
+        Matrix zero(1, 1);
+        zero.zero();
+        return zero;
+    }
+    return Matrix::matrixScalarMultiplication((*this).getAdjugateMatrix(), (1/det));
+}
+
+Matrix Matrix::inverseMatrix(Matrix matrix)
+{
+    double det(matrix.calculateDeterminant());
+    if (!det) {
+        Matrix zero(1, 1);
+        zero.zero();
+        return zero;
+    }
+    return Matrix::matrixScalarMultiplication(adjugateMatrix(matrix), (1/det));
+}
